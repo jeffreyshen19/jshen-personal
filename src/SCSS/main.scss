@@ -1,0 +1,356 @@
+@font-face {
+  font-family: breeserif;
+  src: url("../../Assets/Fonts/breeserif/BreeSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: opensansbold;
+  src: url("../../Assets/Fonts/opensans/OpenSans-Bold.ttf");
+}
+
+@font-face{
+  font-family: opensans;
+  src: url("../../Assets/Fonts/opensans/OpenSans-Regular.ttf");
+}
+
+@font-face{
+  font-family: opensansitalic;
+  src: url("../../Assets/Fonts/opensans/OpenSans-Italic.ttf");
+}
+
+
+$black: #282c37;
+$gray: #9baec8;
+$white: #d9e1e8;
+$blue: #2b90d9;
+$yellow: #F5D76E;
+
+h1{
+  font-family: breeserif;
+}
+
+p{
+  font-family: opensans;
+}
+
+h1, h2, h3, p{
+  margin: 0;
+}
+
+i{
+  font-family: opensansitalic;
+}
+
+strong{
+  font-family: opensansbold;
+}
+
+a{
+  color: $blue;
+  font-family: opensansbold;
+  transition: 0.2s;
+  text-decoration: underline;
+  &:hover{
+    color: $gray;
+  }
+  &:focus, &:visited{
+    color: inherit;
+  }
+}
+
+.btn{
+  font-family: opensansbold;
+  border-radius: 0;
+  color: $white;
+  border: 2px solid $white;
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: 1.2em;
+  text-decoration: none;
+  &:hover{
+    color: $gray;
+  }
+}
+
+.btn-full{
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  opacity: 0.6;
+  z-index: 60;
+}
+
+.img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+center{
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  color: $white;
+  z-index: 80;
+}
+
+nav{
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  .left{
+
+  }
+  .right{
+    text-align: right;
+    a{
+      color: $white;
+      margin-left: 10px;
+      text-decoration: none;
+      font-size: 1.1em;
+      &:hover{
+        color: $gray;
+      }
+    }
+  }
+}
+
+header{
+  width: 100vw;
+  position: relative;
+  height: 80vh;
+  .img{
+    background-image: url("../../Assets/Graphics/cover.jpg");
+    background-attachment: fixed;
+  }
+  center{
+    h1{
+      font-size: 4em;
+    }
+    p{
+      font-size: 1.2em;
+    }
+    .btn:first-of-type{
+      margin-right: 5px;
+    }
+  }
+  #bottom{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    a{
+      color: $white;
+      margin-left: 5px;
+      text-decoration: none;
+      font-size: 1.1em;
+      &:hover{
+        color: $gray;
+      }
+    }
+    z-index: 90;
+    font-size: 1.6em;
+    text-align: center;
+  }
+}
+
+#body{
+  .box{
+    text-align: center;
+    padding: 50px 0 60px;
+    h2{
+      font-size: 1.5em;
+      font-family: opensansbold;
+    }
+    hr{
+      border-top: 4px solid $black;
+      width: 20px;
+      margin: 5px auto 5px;
+    }
+    p{
+      margin: 0 auto;
+      width: 60%;
+    }
+    i.icon{
+      color: $gray;
+      font-size: 1.2em;
+    }
+    &:nth-of-type(even){
+      background-color: #eee;
+    }
+    .portfolio-header{
+      text-align: left;
+      width: 40%;
+      margin: 0 auto 10px;
+      font-size: 1.1em;
+    }
+    .project{
+      margin: 0 auto 15px;
+      width: 40%;
+      text-align: left;
+      h3{
+        font-size: 1.2em;
+        font-family: opensansbold;
+        text-transform: uppercase;
+      }
+      a{
+        color: $blue;
+        font-family: opensansbold;
+        text-decoration: none;
+      }
+      p{
+        font-size: 1em;
+        margin: 0;
+        width: 100%;
+      }
+      .links{
+        margin-top: 10px;
+        a{
+          -webkit-text-stroke: 1px $blue;
+        }
+      }
+    }
+  }
+  #about{
+    a.btn{
+      &:first-of-type{
+        margin-right: 3px;
+        &:focus, &:visited{
+          color: $white;
+        }
+      }
+      &:nth-of-type(2){
+        color: $gray;
+        border-color: $gray;
+        &:hover{
+          color: $black;
+          border-color: $black;
+        }
+      }
+    }
+  }
+  #skills{
+    img{
+      width: 60%;
+      margin: 0 auto;
+    }
+    box-sizing: border-box;
+    padding: 15px;
+    .container{
+      width: 60%;
+      margin: 0 auto;
+      .row{
+        margin-top: 10px;
+      }
+      .fa-star, .fa-star-half{
+        color: $yellow;
+      }
+      .fa-star-o{
+        visibility: hidden;
+      }
+      .col-md-3{
+        text-align: right;
+      }
+      .col-md-9{
+        text-align: left;
+        h3{
+          font-size: 1.2em;
+          font-family: opensansbold;
+          text-transform: uppercase;
+        }
+        p{
+          font-size: 1em;
+          span{
+            color: $blue;
+            font-family: opensansbold;
+          }
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+  #portfolio{
+  }
+  #contact{
+    position: relative;
+    height: 275px;
+    background-color: none;
+    .overlay{
+      opacity: 0.8;
+    }
+    center{
+      .btn{
+        margin-top: 10px;
+      }
+    }
+    .img{
+      background-image: url("../../Assets/Graphics/skyline.jpg");
+    }
+  }
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@media screen and (max-width: 1050px){
+  #body{
+    .box{
+      .project{
+        width: 60%;
+      }
+      .portfolio-header{
+        width: 60%;
+      }
+    }
+    #skills{
+      img{
+        width: 80%;
+      }
+      .container{
+        .row{
+          .col-md-3{
+            text-align: left;
+          }
+        }
+        width: 80%;
+      }
+    }
+  }
+}

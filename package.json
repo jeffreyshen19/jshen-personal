@@ -1,0 +1,21 @@
+{
+  "name": "jshen-personal",
+  "version": "0.1.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeffrey J. Shen",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "gulp-minify": "0.0.14",
+    "pug": "^2.0.0-beta6"
+  }
+}
