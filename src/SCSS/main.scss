@@ -289,6 +289,16 @@ header{
   }
   #portfolio{
   }
+  #books{
+    padding-left: 10px;
+    padding-right: 10px;
+    .book{
+      img{
+        width: 150px;
+      }
+      padding: 2px;
+    }
+  }
   #contact{
     position: relative;
     height: 275px;
