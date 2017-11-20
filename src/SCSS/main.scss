@@ -185,6 +185,11 @@ header{
       width: 20px;
       margin: 5px auto 5px;
     }
+    hr.long{
+      border-top: 1px solid $black;
+      width: 40%;
+      margin: 10px auto;
+    }
     p{
       margin: 0 auto;
       width: 60%;
@@ -344,10 +349,7 @@ header{
 @media screen and (max-width: 1050px){
   #body{
     .box{
-      .project{
-        width: 60%;
-      }
-      .portfolio-header{
+      .project, hr.long, .portfolio-header{
         width: 60%;
       }
     }
