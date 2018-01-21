@@ -102,12 +102,10 @@ center{
   top: 50%;
   transform: translateY(-50%);
   position: relative;
-  color: $white;
-  z-index: 80;
 }
 
 nav{
-  position: fixed;
+  position: absolute;
   width: 100vw;
   z-index: 100;
   top: 0;
@@ -135,18 +133,20 @@ nav{
 header{
   width: 100vw;
   position: relative;
-  height: 80vh;
-  .img{
-    background-image: url("../../Assets/Graphics/cover.jpg");
-    background-attachment: fixed;
-    background-position: left bottom;
-  }
+  height: 100vh;
+  background: #5C258D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   center{
+    color: $white;
+    z-index: 80;
     h1{
       font-size: 4em;
     }
     p{
       font-size: 1.2em;
+      width: 70%;
+      margin: 0 auto;
     }
     .btn:first-of-type{
       margin-right: 5px;
@@ -157,6 +157,10 @@ header{
     left: 50%;
     transform: translateX(-50%);
     bottom: 10px;
+    i.caption{
+      color: $white;
+      font-size: .7em;
+    }
     a{
       color: $white;
       margin-left: 5px;
@@ -187,7 +191,7 @@ header{
     }
     hr.long{
       border-top: 1px solid $black;
-      width: 40%;
+      width: 100%;
       margin: 10px auto;
     }
     p{
@@ -201,15 +205,9 @@ header{
     &:nth-of-type(even){
       background-color: #eee;
     }
-    .portfolio-header{
-      text-align: left;
-      width: 40%;
-      margin: 0 auto 10px;
-      font-size: 1.1em;
-    }
     .project{
       margin: 0 auto 15px;
-      width: 40%;
+      width: 100%;
       text-align: left;
       h3{
         font-size: 1.2em;
@@ -230,24 +228,6 @@ header{
         margin-top: 10px;
         a{
           -webkit-text-stroke: 1px $blue;
-        }
-      }
-    }
-  }
-  #about{
-    a.btn{
-      &:first-of-type{
-        margin-right: 3px;
-        &:focus, &:visited{
-          color: $white;
-        }
-      }
-      &:nth-of-type(2){
-        color: $gray;
-        border-color: $gray;
-        &:hover{
-          color: $black;
-          border-color: $black;
         }
       }
     }
@@ -314,6 +294,8 @@ header{
       opacity: 0.8;
     }
     center{
+      color: $white;
+      z-index: 80;
       .btn{
         margin-top: 10px;
       }
@@ -322,6 +304,51 @@ header{
       background-image: url("../../Assets/Graphics/skyline.jpg");
     }
   }
+}
+
+#portfolio .fa-chevron-down{
+    color: #6c6c6c;
+    float: right;
+    line-height: 50px;
+}
+
+.accordion{
+  width: 60%;
+  margin: 0 auto;
+}
+
+#portfolio .project-header{
+  font-family: opensansitalic;
+  text-align: left;
+  line-height: 50px;
+}
+
+#portfolio .projects{
+    font-family: sourcesanspro;
+    margin: 0;
+}
+
+#portfolio .project-header{
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100;
+    margin: 0;
+}
+
+#portfolio ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+#portfolio li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rotate {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .typed-cursor{
@@ -349,9 +376,7 @@ header{
 @media screen and (max-width: 1050px){
   #body{
     .box{
-      .project, hr.long, .portfolio-header{
-        width: 60%;
-      }
+
     }
     #skills{
       img{

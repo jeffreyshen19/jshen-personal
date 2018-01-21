@@ -1,4 +1,4 @@
-$(document).scroll(function() {
+/*$(document).scroll(function() {
   if($(this).scrollTop() > $(window).height() * 0.8 - 50){
     $("nav").css({
       'background-color': '#2C3E50',
@@ -10,7 +10,7 @@ $(document).scroll(function() {
       'background': 'none',
     });
   }
-});
+});*/
 
 $(function(){
   $("#header-text").typed({
@@ -18,6 +18,26 @@ $(function(){
     typeSpeed: 30,
     startDelay: 1000
   });
+
+  /*$.scrollify({
+    section : ".scrollbox",
+    interstitialSection: ".interstitial"
+  });*/
+
+  $(".projects").hide();
+
+  $('h2.project-header').on('click', function(){
+    $(this).next().slideToggle('500')
+    .siblings('li.projects').slideUp();
+
+    var icon = $(this).children('.fa-chevron-down');
+
+    $('.fa-chevron-down').not(icon).removeClass('rotate');
+
+    icon.toggleClass('rotate');
+
+  });
+
 
   $.get("https://jshen-labs.herokuapp.com/updates", function(data){
     console.log(data);
@@ -27,7 +47,7 @@ $(function(){
       if(!data[i].image_url.includes("nophoto")){
         var numberOfMs = 0;
         imageURL = data[i].image_url;
-        
+
         for(var j = 0; j < imageURL.length; j++){
           if(imageURL.charAt(j) == 'm'){
             numberOfMs++;

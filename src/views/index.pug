@@ -13,50 +13,70 @@ html(lang='en')
     script(src='Assets/bower_components/jquery/dist/jquery.min.js')
     script(src='Assets/bower_components/bootstrap/dist/js/bootstrap.min.js')
     script(src='Assets/bower_components/typed.js/dist/typed.min.js')
+    script(src='Assets/bower_components/Scrollify/jquery.scrollify.js')
     script(src='dist/main-min.js')
   body
     .container-fluid
       nav.row
         .col-md-1.left
         .col-md-11.right
-          a(href = "#about") About
           a(href = "#skills") Skills
           a(href = "#portfolio") Portfolio
           a(href = "#projects") Projects
           a(href = "#books") My Books
           a(href = "#contact") Contact
       .row
-        header.col-md-12
-          .overlay
-          .img
+        header.col-md-12.scrollbox
           center
             h1
               span#header-text 
-            p Student, developer, and robot enthusiast
+            p I'm a student, programmer, and engineer at Phillips Academy interested in the intersection between computer science, big data, politics, and history. 
             br
             a.btn(href='#contact') Contact Me
-            a.btn.btn-full(href='#portfolio') See my Work
+            a.btn.btn-full(href = "https://drive.google.com/open?id=0B6w9AP5vVyo9REVlY0Rqd3BpSzA" target = "_blank") View Resume
           #bottom
+            i.caption Scroll for more
+            br
             a(href = "https://github.com/jeffreyshen19" target = "_blank" title = "Github")
               i.fa.fa-github.fa-fw
             a(href = "https://www.linkedin.com/in/jeffrey-shen-39576ab1/" target = "_blank" title = "LinkedIn")
               i.fa.fa-fw.fa-linkedin-square
-            a(href = "https://wakatime.com/@jeffreyshen19" target = "_blank" title = "Wakatime ")
+            //a(href = "https://wakatime.com/@jeffreyshen19" target = "_blank" title = "Wakatime ")
               i.fa.fa-fw.fa-clock-o
       #body
-        #about.row.box
-          i.fa.icon.fa-fw.fa-info
-          h2 ABOUT
-          hr
-          p
-            | Hi! I'm Jeffrey, an 11th grader at Phillips Academy. I'm a passionate student, programmer and engineer, and love finding creative and modern solutions for challenging problems.
-          br
-          a.btn.btn-full(href = "https://drive.google.com/open?id=0B6w9AP5vVyo9REVlY0Rqd3BpSzA" target = "_blank") View Resume
-        #skills.row.box
+        #skills.row.box.scrollbox
           i.fa.icon.fa-fw.fa-code
           h2 SKILLS
           hr
           .container
+            .row
+              .col-md-3
+                .rating
+                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star-half
+              .col-md-9
+                h3 Javascript
+                p
+                  span 4 years experience
+                  br
+                  | Can use JS effectively in frontend, backend, and desktop apps.
+            .row
+              .col-md-3
+                .rating
+                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star-half
+              .col-md-9
+                h3 Robotics
+                p
+                  span 6 years experience
+                  br
+                  | Has experience with competitive VEX Robotics and is the current head of Phillips Academy VEX Robotics.  
             .row
               .col-md-3
                 .rating
@@ -78,41 +98,11 @@ html(lang='en')
                   i.fa.fa-fw.fa-star
                   i.fa.fa-fw.fa-star
                   i.fa.fa-fw.fa-star
-                  i.fa.fa-fw.fa-star-o
+                  i.fa.fa-fw.fa-star-half
               .col-md-9
-                h3 Javascript
+                h3 Mathematics
                 p
-                  span 3 years experience
-                  br
-                  | Can use JS effectively in frontend, backend, and desktop apps.
-            .row
-              .col-md-3
-                .rating
-                  i.fa.fa-fw.fa-star
-                  i.fa.fa-fw.fa-star
-                  i.fa.fa-fw.fa-star
-                  i.fa.fa-fw.fa-star
-                  i.fa.fa-fw.fa-star-o
-              .col-md-9
-                h3 Robotics
-                p
-                  span 6 years experience
-                  br
-                  | I've been doing competitive robotics for quite some time (6 years!), and am the current head of Phillips Academy's VEX Robotics program. 
-            .row
-              .col-md-3
-                .rating
-                  i.fa.fa-fw.fa-star
-                  i.fa.fa-fw.fa-star
-                  i.fa.fa-fw.fa-star
-                  i.fa.fa-fw.fa-star
-                  i.fa.fa-fw.fa-star-o
-              .col-md-9
-                h3 Making
-                p
-                  span 2 years experience
-                  br
-                  | I love building things, and can use 3D printers, laser cutters, vinyl cutters, and power tools to build a variety of objects.
+                  | Is able to apply mathematics to solve real world problems. Knows multivariable calculus and some statistics. 
             .row
               .col-md-3
                 .rating
@@ -124,9 +114,9 @@ html(lang='en')
               .col-md-9
                 h3 Java
                 p
-                  span 2 year experience
+                  span 3 years experience
                   br
-                  | I can use Java effectively to solve computer science problems, parse data, and build simple applications.
+                  | Can use Java effectively.
             .row
               .col-md-3
                 .rating
@@ -134,220 +124,204 @@ html(lang='en')
                   i.fa.fa-fw.fa-star
                   i.fa.fa-fw.fa-star
                   i.fa.fa-fw.fa-star
-                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star-o
               .col-md-9
-                h3 Learning by doing
+                h3 Data Visualization
                 p
-                  span 16 years experience
+                  span 1 years experience
                   br
-                  | I learn best by doing. If I want to do something, I can learn how to do it by trying, failing, and improving. 
-          br        
-          br                
-          h2 TOOLS I USE REGULARLY
-          hr        
-          img(src = "Assets/Graphics/tools.png" title = "Tools I use regularly" alt = "Tools I use regularly")
-        #portfolio.row.box
+                  | Can make data visualizations with Processing and D3.js.
+            .row
+              .col-md-3
+                .rating
+                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star
+                  i.fa.fa-fw.fa-star-o
+              .col-md-9
+                h3 Research
+                p
+                  span 4 years experience
+                  br
+                  | Experienced in writing well-researched papers and reports. 
+            br
+        #portfolio.row.box.scrollbox
           i.fa.icon.fa-fw.fa-briefcase
           h2 PORTFOLIO
           hr
-          p I do many projects such as building websites, apps, and robots.
-          p 
-            a(href = "#websites") Websites
-            | |
-            a(href = "#data-vis") Data Visualization
-            | |
-            a(href = "#robotics") Robotics
-            | |
-            a(href = "#java") Java
-            | |
-            a(href = "#ceramics") Ceramics
-          br      
-          .portfolio-header 
-            i Featured Projects:
-          .project
-            h3 Parallax.c
-            p An extensible library of code developed to make programming competitive VEX robots easier. Developed as part of Phillips Academy's VEX robotics program. 
-            p.links
-              a(href = "https://github.com/PARobotics/Robotics-Library" target = "_blank") 
-                i.fa.fa-fw.fa-code 
-          .project
-            h3 Virtual IoT Server
-            p Code developed as part of an internship with Dr. Peter Reiher @ UCLA. Sets up a virtual server to secure previously unencrypted Internet of Things communication
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Virtual-IoT-Server" target = "_blank") 
-                i.fa.fa-fw.fa-code 
-          hr.long
-          .portfolio-header#websites
-            i Websites:
-          .project
-            h3 The Printer @ PA 
-            a(href = "http://www.theprinteratpa.com") theprinteratpa.com
-            p Developed and maintained the website for the The Printer @ PA, an organization at Phillips Academy that prints custom t-shirts. Written using Node.js, Pug (An HTML preprocessor), and SCSS.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Printer-at-PA" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://www.theprinteratpa.com" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Blue Moon
-            a(href = "http://bluemoonjournal.com") bluemoonjournal.com
-            p Developed and maintained the website for Blue Moon, the first print and online STEM magazine at Phillips Academy. Written on the Jekyll framework, using ruby, HTML, and CSS.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Blue-Moon" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://bluemoonjournal.com" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Polar Area Calculator
-            a(href = "https://jeffreyshen19.github.io/Polar-Area-Calculator/") jeffreyshen19.github.io/Polar-Area-Calculator
-            p Created an interactive polar grapher that can solve for the area bounded by polar curves. Created as a final calculus project for future calculus students at Phillips Academy.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Polar-Area-Calculator" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "https://jeffreyshen19.github.io/Polar-Area-Calculator/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Level Curve Plotter
-            a(href = "https://jeffreyshen19.github.io/Level-Curve-Plotter/") jeffreyshen19.github.io/Level-Curve-Plotter/
-            p A project for Math 650 at Andover that plots and solves level curves and partial derivatives.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Level-Curve-Plotter" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "https://jeffreyshen19.github.io/Level-Curve-Plotter/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          .project
-            h3 Website for Dr. Van Savage
-            a(href = "http://faculty.biomath.ucla.edu/vsavage/") faculty.biomath.ucla.edu/vsavage
-            p Developed a personal webpage for Dr. Savage, Professor at UCLA. Written using standard HTML, CSS, and Javascript.
-            p.links
-              a(href = "http://faculty.biomath.ucla.edu/vsavage/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Front End Boilerplate
-            p Developed a personal Gulp/SCSS/Pug boilerplate for creating front-end websites. 
-            p.links
-              a(href = "https://github.com/jeffreyshen19/frontend-boilerplate" target = "_blank") 
-                i.fa.fa-fw.fa-code
-          //.project
-            h3 Website for Phillips Academy Robotics
-            a(href = "http://parobotics.org") parobotics.org
-            p Developed a webpage for Phillips Academy Robotics. Written using HTML, CSS, Javascript, and PHP.
-            p.links
-              a(href = "https://github.com/PARobotics/parallax-website" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://parobotics.org" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Techmasters
-            a(href = "http://techmasters.io") techmasters.io
-            p Developed website for Techmasters, a student run organization dedicated to providing tech help for the Phillips Academy Community. Written using HTML and CSS.
-            p.links
-              a(href = "https://github.com/PATechmasters/techmasters.io" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://techmasters.io" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Website for Jocelyn Shen
-            a(href = "http://jocelynshen.com") jocelynshen.com
-            p Developed a personal website for my sister using standard HTML, CSS, and Javascript.
-            p.links
-              a(href = "https://github.com/jocelynshen/jocelynshen.github.io" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://jocelynshen.com" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Andover / Exeter Day Website 2017
-            a(href = "http://aeday.phillipian.net") aeday.phillipian.net
-            p Helped develop the Andover / Exeter Day website for Phillipian. 
-            p.links
-              a(href = "https://github.com/phillipian/aeday-2017" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://aeday.phillipian.net" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          hr.long
-          .portfolio-header#data-vis
-            i Data Visualization
-          .project
-            h3 America Population Visualizer
-            p A simple Processing sketch displaying the population of America and its territories over time. Data was collected and processed using Java. 
-            p.links
-              a(href = "https://github.com/jeffreyshen19/America-Population" target = "_blank") 
-                i.fa.fa-fw.fa-code
-          .project
-            h3 Civil Asset Forfeiture in California
-            p Data visualization showing civil asset forfeitures by county in California. Created using Javascript and D3.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Asset-Forfeiture-in-California" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://jeffreyshen19.github.io/Asset-Forfeiture-in-California/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          hr.long
-          .portfolio-header#robotics
-            i Robotics:
-          .project
-            h3 Parallax.c
-            p An extensible library of code developed to make programming competitive VEX robots easier. Developed as part of Phillips Academy's VEX robotics program. 
-            p.links
-              a(href = "https://github.com/PARobotics/Robotics-Library" target = "_blank") 
-                i.fa.fa-fw.fa-code 
-          .project
-            h3 Parallax Curriculum
-            p I spearheaded the development of a competitive VEX robotics curriculum for Phillips Academy Robotics to serve as a long term database of robotics knowledge.
-            p.links
-              a(href = "https://github.com/PARobotics/parallax-curriculum" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          .project
-            h3 Code for VEX Robotics Competition In the Zone (2017-2018)
-            p I lead the development of the code for Team 8900A's VEX Robotics code. 
-            p.links
-              a(href = "https://github.com/PARobotics/In-the-Zone" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          .project
-            h3 Parallax Curriculum
-            p I spearheaded the development of a competitive VEX robotics curriculum for Phillips Academy Robotics to serve as a long term database of robotics knowledge.
-            p.links
-              a(href = "https://github.com/PARobotics/parallax-curriculum" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          .project
-            h3 VEX Robotics Data Analyzer
-            p I developed a Jupyter notebook to help parse data for robotics. 
-            p.links
-              a(href = "https://github.com/PARobotics/Analyzer" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          hr.long
-          .portfolio-header#java 
-            i Java:
-          .project
-            h3 Virtual IoT Server
-            p Code developed as part of an internship with Dr. Peter Reiher @ UCLA. Sets up a virtual server to secure previously unencrypted Internet of Things communication
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Virtual-IoT-Server" target = "_blank") 
-                i.fa.fa-fw.fa-code 
-          hr.long
-          .portfolio-header#ceramics 
-            i Ceramics:
-          .project
-            h3 Sgraffito Panda Bowl
-            p Ceramic bowl with slip carving. Glazed with chun.
-            p.links
-              a(href = "https://photos.app.goo.gl/4r4QLbOlbPLH17k83" target = "_blank") 
-                i.fa.fa-fw.fa-picture-o 
-
-          
-        #projects.row.box
-          i.fa.icon.fa-fw.fa-wrench
-          h2 PROJECTS
-          hr
-          p Random things I'm working on right now.
+          ul.accordion
+            h2.project-header 
+              | Websites
+              i.fa.fa-chevron-down
+            li.projects
+              .project
+                h3 The Printer @ PA 
+                a(href = "http://www.theprinteratpa.com") theprinteratpa.com
+                p Developed and maintained the website for the The Printer @ PA, an organization at Phillips Academy that prints custom t-shirts. Written using Node.js, Pug (An HTML preprocessor), and SCSS.
+                p.links
+                  a(href = "https://github.com/jeffreyshen19/Printer-at-PA" target = "_blank") 
+                    i.fa.fa-fw.fa-code
+                  a(href = "http://www.theprinteratpa.com" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link
+              .project
+                h3 Blue Moon
+                a(href = "http://bluemoonjournal.com") bluemoonjournal.com
+                p Developed and maintained the website for Blue Moon, the first print and online STEM magazine at Phillips Academy. Written on the Jekyll framework, using ruby, HTML, and CSS.
+                p.links
+                  a(href = "https://github.com/jeffreyshen19/Blue-Moon" target = "_blank") 
+                    i.fa.fa-fw.fa-code
+                  a(href = "http://bluemoonjournal.com" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link
+              .project
+                h3 Polar Area Calculator
+                a(href = "https://jeffreyshen19.github.io/Polar-Area-Calculator/") jeffreyshen19.github.io/Polar-Area-Calculator
+                p Created an interactive polar grapher that can solve for the area bounded by polar curves. Created as a final calculus project for future calculus students at Phillips Academy.
+                p.links
+                  a(href = "https://github.com/jeffreyshen19/Polar-Area-Calculator" target = "_blank") 
+                    i.fa.fa-fw.fa-code
+                  a(href = "https://jeffreyshen19.github.io/Polar-Area-Calculator/" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link
+              .project
+                h3 Level Curve Plotter
+                a(href = "https://jeffreyshen19.github.io/Level-Curve-Plotter/") jeffreyshen19.github.io/Level-Curve-Plotter/
+                p A project for Math 650 at Andover that plots and solves level curves and partial derivatives.
+                p.links
+                  a(href = "https://github.com/jeffreyshen19/Level-Curve-Plotter" target = "_blank") 
+                    i.fa.fa-fw.fa-code
+                  a(href = "https://jeffreyshen19.github.io/Level-Curve-Plotter/" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link 
+              .project
+                h3 Website for Dr. Van Savage
+                a(href = "http://faculty.biomath.ucla.edu/vsavage/") faculty.biomath.ucla.edu/vsavage
+                p Developed a personal webpage for Dr. Savage, Professor at UCLA. Written using standard HTML, CSS, and Javascript.
+                p.links
+                  a(href = "http://faculty.biomath.ucla.edu/vsavage/" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link
+              .project
+                h3 Front End Boilerplate
+                p Developed a personal Gulp/SCSS/Pug boilerplate for creating front-end websites. 
+                p.links
+                  a(href = "https://github.com/jeffreyshen19/frontend-boilerplate" target = "_blank") 
+                    i.fa.fa-fw.fa-code
+              .project
+                h3 Techmasters
+                a(href = "http://techmasters.io") techmasters.io
+                p Developed website for Techmasters, a student run organization dedicated to providing tech help for the Phillips Academy Community. Written using HTML and CSS.
+                p.links
+                  a(href = "https://github.com/PATechmasters/techmasters.io" target = "_blank") 
+                    i.fa.fa-fw.fa-code
+                  a(href = "http://techmasters.io" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link
+              .project
+                h3 Website for Jocelyn Shen
+                a(href = "http://jocelynshen.com") jocelynshen.com
+                p Developed a personal website for my sister using standard HTML, CSS, and Javascript.
+                p.links
+                  a(href = "https://github.com/jocelynshen/jocelynshen.github.io" target = "_blank") 
+                    i.fa.fa-fw.fa-code
+                  a(href = "http://jocelynshen.com" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link
+              .project
+                h3 Andover / Exeter Day Website 2017
+                a(href = "http://aeday.phillipian.net") aeday.phillipian.net
+                p Helped develop the Andover / Exeter Day website for Phillipian. 
+                p.links
+                  a(href = "https://github.com/phillipian/aeday-2017" target = "_blank") 
+                    i.fa.fa-fw.fa-code
+                  a(href = "http://aeday.phillipian.net" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link
+            hr.long
+            h2.project-header 
+              | Data Visualization
+              i.fa.fa-chevron-down
+            li.projects
+              .project
+                h3 America Population Visualizer
+                p A simple Processing sketch displaying the population of America and its territories over time. Data was collected and processed using Java. 
+                p.links
+                  a(href = "https://github.com/jeffreyshen19/America-Population" target = "_blank") 
+                    i.fa.fa-fw.fa-code
+              .project
+                h3 Civil Asset Forfeiture in California
+                p Data visualization showing civil asset forfeitures by county in California. Created using Javascript and D3.
+                p.links
+                  a(href = "https://github.com/jeffreyshen19/Asset-Forfeiture-in-California" target = "_blank") 
+                    i.fa.fa-fw.fa-code
+                  a(href = "http://jeffreyshen19.github.io/Asset-Forfeiture-in-California/" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link 
+            hr.long
+            h2.project-header 
+              | Robotics
+              i.fa.fa-chevron-down
+            li.projects
+              .project
+                h3 Parallax.c
+                p An extensible library of code developed to make programming competitive VEX robots easier. Developed as part of Phillips Academy's VEX robotics program. 
+                p.links
+                  a(href = "https://github.com/PARobotics/Robotics-Library" target = "_blank") 
+                    i.fa.fa-fw.fa-code 
+              .project
+                h3 Parallax Curriculum
+                p I spearheaded the development of a competitive VEX robotics curriculum for Phillips Academy Robotics to serve as a long term database of robotics knowledge.
+                p.links
+                  a(href = "https://github.com/PARobotics/parallax-curriculum" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link 
+              .project
+                h3 Code for VEX Robotics Competition In the Zone (2017-2018)
+                p I lead the development of the code for Team 8900A's VEX Robotics code. 
+                p.links
+                  a(href = "https://github.com/PARobotics/In-the-Zone" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link 
+              .project
+                h3 Parallax Curriculum
+                p I spearheaded the development of a competitive VEX robotics curriculum for Phillips Academy Robotics to serve as a long term database of robotics knowledge.
+                p.links
+                  a(href = "https://github.com/PARobotics/parallax-curriculum" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link 
+              .project
+                h3 VEX Robotics Data Analyzer
+                p I developed a Jupyter notebook to help parse data for robotics. 
+                p.links
+                  a(href = "https://github.com/PARobotics/Analyzer" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link 
+            hr.long
+            h2.project-header 
+              | Java
+              i.fa.fa-chevron-down
+            li.projects
+              .project
+                h3 Virtual IoT Server
+                p Code developed as part of an internship with Dr. Peter Reiher @ UCLA. Sets up a virtual server to secure previously unencrypted Internet of Things communication
+                p.links
+                  a(href = "https://github.com/jeffreyshen19/Virtual-IoT-Server" target = "_blank") 
+                    i.fa.fa-fw.fa-code 
+            hr.long
+            h2.project-header 
+              | Writing
+              i.fa.fa-chevron-down
+            li.projects
+              .project
+                h3 The Economic Benefits of Open Source Software
+                p.links
+                  a(href = "./Assets/Essays/economic_benefits_of_open_source.pdf" target = "_blank") 
+                    i.fa.fa-fw.fa-external-link
+            hr.long
+            h2.project-header 
+              | Art
+              i.fa.fa-chevron-down
+            li.projects
+              .project
+                h3 Sgraffito Panda Bowl
+                p Ceramic bowl with slip carving. Glazed with chun.
+                p.links
+                  a(href = "https://photos.app.goo.gl/4r4QLbOlbPLH17k83" target = "_blank") 
+                    i.fa.fa-fw.fa-picture-o 
           br
-          .project
-            h3 Is my district gerrymandered? 
-            p A project that analyzes geographical and voting data to determine how likely a congressional district is gerrymandered. 
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Is-My-District-Gerrymandered" target = "_blank") 
-                i.fa.fa-fw.fa-code
-        #books.row.box
-          i.fa.fa.-fw.icon.fa-book
+          br
+          br
+        #books.row.box.scrollbox
+          i.fa.fa-fw.icon.fa-book
           h2 BOOKS I'VE RECENTLY READ
           hr
           p I love to read! Here are some books I just finished reading:
@@ -355,7 +329,7 @@ html(lang='en')
           #books-row
           br
           p Check out my goodreads profile <a href = "https://www.goodreads.com/user/show/45848993-jeffrey" target = "_blank">here</a>.
-        #contact.row.box
+        #contact.row.box.interstitial
           .img
           .overlay
           center
