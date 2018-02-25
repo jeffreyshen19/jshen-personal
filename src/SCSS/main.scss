@@ -275,6 +275,12 @@ header{
   }
   #portfolio{
   }
+  #writing{
+    ul{
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
   #books{
     padding-left: 10px;
     padding-right: 10px;
@@ -377,6 +383,11 @@ header{
   #body{
     .box{
 
+    }
+    #writing{
+      ul{
+        width: 80%;
+      }
     }
     #skills{
       img{
