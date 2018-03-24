@@ -58,7 +58,12 @@ $(function(){
           }
         }
       }
+      else if(data[i].isbn13.nil) imageURL = data[i].image_url;
       else imageURL = "http://covers.openlibrary.org/b/isbn/"+ data[i].isbn13 + "-L.jpg";
+
+      console.log(data[i].isbn13.nil);
+
+
 
       $("#books-row").append("<a class = 'book' target = '_blank' href = '" + data[i].link + "'><img src = '" + imageURL + "'></a>");
     }
