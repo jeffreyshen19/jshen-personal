@@ -18,29 +18,23 @@ $(function(){
     typeSpeed: 30,
     startDelay: 1000
   });
-
-  /*$.scrollify({
-    section : ".scrollbox",
-    interstitialSection: ".interstitial"
-  });*/
-
-  $(".projects").hide();
-
-  $('h2.project-header').on('click', function(){
-    $(this).next().slideToggle('500')
-    .siblings('li.projects').slideUp();
-
-    var icon = $(this).children('.fa-chevron-down');
-
-    $('.fa-chevron-down').not(icon).removeClass('rotate');
-
-    icon.toggleClass('rotate');
-
-  });
+ 
+  // $(".projects").hide();
+  //
+  // $('h2.project-header').on('click', function(){
+  //   $(this).next().slideToggle('500')
+  //   .siblings('li.projects').slideUp();
+  //
+  //   var icon = $(this).children('.fa-chevron-down');
+  //
+  //   $('.fa-chevron-down').not(icon).removeClass('rotate');
+  //
+  //   icon.toggleClass('rotate');
+  //
+  // });
 
 
   $.get("https://jshen-labs.herokuapp.com/updates", function(data){
-    console.log(data);
     for(var i = 0; i < 5; i++){
       var imageURL;
 
@@ -60,10 +54,6 @@ $(function(){
       }
       else if(data[i].isbn13.nil) imageURL = data[i].image_url;
       else imageURL = "http://covers.openlibrary.org/b/isbn/"+ data[i].isbn13 + "-L.jpg";
-
-      console.log(data[i].isbn13.nil);
-
-
 
       $("#books-row").append("<a class = 'book' target = '_blank' href = '" + data[i].link + "'><img src = '" + imageURL + "'></a>");
     }

@@ -400,22 +400,17 @@ header{
   margin: 0 auto;
 }
 
-#portfolio .project-header{
+.project-header{
   font-family: opensansitalic;
   text-align: left;
-  line-height: 50px;
+  font-size: 1.4em;
+  margin: 10px 0;
 }
 
-#portfolio .projects{
+.projects{
     font-family: sourcesanspro;
-    margin: 0;
-}
-
-#portfolio .project-header{
-    font-size: 1.2em;
-    cursor: pointer;
-    width: 100;
-    margin: 0;
+    margin: 0 auto;
+    width: 60%;
 }
 
 #portfolio ul{
