@@ -13,26 +13,6 @@
 });*/
 
 $(function(){
-  $("#header-text").typed({
-    strings: ["Hi! I'm Jeffrey"],
-    typeSpeed: 30,
-    startDelay: 1000
-  });
- 
-  // $(".projects").hide();
-  //
-  // $('h2.project-header').on('click', function(){
-  //   $(this).next().slideToggle('500')
-  //   .siblings('li.projects').slideUp();
-  //
-  //   var icon = $(this).children('.fa-chevron-down');
-  //
-  //   $('.fa-chevron-down').not(icon).removeClass('rotate');
-  //
-  //   icon.toggleClass('rotate');
-  //
-  // });
-
 
   $.get("https://jshen-labs.herokuapp.com/updates", function(data){
     for(var i = 0; i < 5; i++){

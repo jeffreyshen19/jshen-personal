@@ -1,23 +1,20 @@
+// ** THEME **
 @font-face {
-  font-family: breeserif;
-  src: url("../../Assets/Fonts/breeserif/BreeSerif-Regular.ttf");
+  font-family: "IBM Plex Sans";
+  src: url("/Assets/Fonts/IBM-Plex-Sans/IBMPlexSans-Regular.otf");
 }
 
 @font-face {
-  font-family: opensansbold;
-  src: url("../../Assets/Fonts/opensans/OpenSans-Bold.ttf");
+  font-family: "IBM Plex Sans";
+  src: url("/Assets/Fonts/IBM-Plex-Sans/IBMPlexSans-Bold.otf");
+  font-weight: bold;
 }
 
-@font-face{
-  font-family: opensans;
-  src: url("../../Assets/Fonts/opensans/OpenSans-Regular.ttf");
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/Assets/Fonts/IBM-Plex-Sans/IBMPlexSans-Italic.otf");
+  font-style: italic;
 }
-
-@font-face{
-  font-family: opensansitalic;
-  src: url("../../Assets/Fonts/opensans/OpenSans-Italic.ttf");
-}
-
 
 $black: #282c37;
 $gray: #9baec8;
@@ -25,31 +22,20 @@ $white: #d9e1e8;
 $blue: #2b90d9;
 $yellow: #F5D76E;
 
-h1{
-  font-family: breeserif;
+body{
+  font-family: "IBM Plex Sans";
+  overflow-x: hidden;
 }
 
-p{
-  font-family: opensans;
-}
-
-h1, h2, h3, p{
-  margin: 0;
-}
-
-i{
-  font-family: opensansitalic;
-}
-
-strong{
-  font-family: opensansbold;
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
 }
 
 a{
   color: $blue;
-  font-family: opensansbold;
   transition: 0.2s;
   text-decoration: underline;
+
   &:hover{
     color: $gray;
   }
@@ -58,16 +44,23 @@ a{
   }
 }
 
+a.light{
+  color: white;
+  text-decoration: none;
+  &:hover{
+    color: $white;
+  }
+}
+
 .btn{
-  font-family: opensansbold;
   border-radius: 0;
-  color: $white;
-  border: 2px solid $white;
+  color: white;
+  border: 2px solid white;
   padding: 0.5em 1em 0.5em 1em;
   font-size: 1.2em;
   text-decoration: none;
   &:hover{
-    color: $gray;
+    color: $white;
   }
 }
 
@@ -76,98 +69,64 @@ a{
   border-color: $blue;
 }
 
-.overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: $black;
-  opacity: 0.6;
-  z-index: 60;
-}
-
-.img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-center{
-  top: 50%;
-  transform: translateY(-50%);
-  position: relative;
-}
-
-nav{
-  position: absolute;
-  width: 100vw;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 20px 40px;
-  box-sizing: border-box;
-  .left{
-
-  }
-  .right{
-    text-align: right;
-    a{
-      color: $white;
-      margin-left: 10px;
-      text-decoration: none;
-      font-size: 1.1em;
-      &:hover{
-        color: $gray;
-      }
-    }
-  }
-}
-
 header{
   width: 100vw;
   position: relative;
-  height: 100vh;
-  background: #5C258D;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 95vh;
+  background: #2980b9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+
+  nav{
+    width: 100vw;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 1.2em;
+
+    a{
+      margin-left: 10px;
+    }
+  }
+
   center{
-    color: $white;
-    z-index: 80;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+
     h1{
       font-size: 4em;
     }
     p{
-      font-size: 1.2em;
-      width: 70%;
+      font-size: 1.4em;
+      max-width: 700px;
       margin: 0 auto;
+      padding-left: 20px;
+      padding-right: 20px;
     }
     .btn:first-of-type{
       margin-right: 5px;
     }
   }
+
   #bottom{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 10px;
     i.caption{
-      color: $white;
+      color: white;
       font-size: .7em;
     }
     a{
-      color: $white;
+      color: white;
       margin-left: 5px;
       text-decoration: none;
       font-size: 1.1em;
       &:hover{
-        color: $gray;
+        color: $white;
       }
     }
     z-index: 90;
@@ -182,7 +141,6 @@ header{
     padding: 50px 0 60px;
     h2{
       font-size: 1.5em;
-      font-family: opensansbold;
     }
     hr{
       border-top: 4px solid $black;
@@ -211,12 +169,10 @@ header{
       text-align: left;
       h3{
         font-size: 1.2em;
-        font-family: opensansbold;
         text-transform: uppercase;
       }
       a{
         color: $blue;
-        font-family: opensansbold;
         text-decoration: none;
       }
       p{
@@ -258,14 +214,12 @@ header{
         text-align: left;
         h3{
           font-size: 1.2em;
-          font-family: opensansbold;
           text-transform: uppercase;
         }
         p{
           font-size: 1em;
           span{
             color: $blue;
-            font-family: opensansbold;
           }
           margin: 0;
           width: 100%;
@@ -317,7 +271,6 @@ header{
             }
           }
           h3{
-            font-family: opensansbold;
             font-size: 2.2em;
           }
         }
@@ -401,16 +354,15 @@ header{
 }
 
 .project-header{
-  font-family: opensansitalic;
+  font-style: italic;
   text-align: left;
   font-size: 1.4em;
   margin: 10px 0;
 }
 
 .projects{
-    font-family: sourcesanspro;
-    margin: 0 auto;
-    width: 60%;
+  margin: 0 auto;
+  width: 60%;
 }
 
 #portfolio ul{
@@ -422,33 +374,6 @@ header{
 #portfolio li{
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.rotate {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
 }
 
 @media screen and (max-width: 1050px){
