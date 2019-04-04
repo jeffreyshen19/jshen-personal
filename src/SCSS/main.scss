@@ -20,7 +20,6 @@ $black: #282c37;
 $gray: #9baec8;
 $white: #d9e1e8;
 $blue: #2b90d9;
-$yellow: #F5D76E;
 
 body{
   font-family: "IBM Plex Sans";
@@ -29,6 +28,10 @@ body{
 
 h1, h2, h3, h4, h5, h6{
   font-weight: bold;
+}
+
+h3{
+  margin-bottom: 0px;
 }
 
 a{
@@ -177,52 +180,13 @@ header{
       }
       p{
         font-size: 1em;
-        margin: 0;
+        margin-top: 2px;
         width: 100%;
       }
       .links{
         margin-top: 10px;
         a{
           -webkit-text-stroke: 1px $blue;
-        }
-      }
-    }
-  }
-  #skills{
-    img{
-      width: 60%;
-      margin: 0 auto;
-    }
-    box-sizing: border-box;
-    padding: 15px;
-    .container{
-      width: 60%;
-      margin: 0 auto;
-      .row{
-        margin-top: 10px;
-      }
-      .fa-star, .fa-star-half{
-        color: $yellow;
-      }
-      .fa-star-o{
-        visibility: hidden;
-      }
-      .col-md-3{
-        text-align: right;
-      }
-      .col-md-9{
-        text-align: left;
-        h3{
-          font-size: 1.2em;
-          text-transform: uppercase;
-        }
-        p{
-          font-size: 1em;
-          span{
-            color: $blue;
-          }
-          margin: 0;
-          width: 100%;
         }
       }
     }
@@ -305,12 +269,7 @@ header{
       }
     }
   }
-  #writing{
-    ul{
-      width: 60%;
-      margin: 0 auto;
-    }
-  }
+
   #books{
     padding-left: 10px;
     padding-right: 10px;
@@ -322,31 +281,8 @@ header{
       padding: 2px;
     }
   }
-  #contact{
-    position: relative;
-    height: 275px;
-    background-color: none;
-    .overlay{
-      opacity: 0.8;
-    }
-    center{
-      color: $white;
-      z-index: 80;
-      .btn{
-        margin-top: 10px;
-      }
-    }
-    .img{
-      background-image: url("../../Assets/Graphics/skyline.jpg");
-    }
-  }
 }
 
-#portfolio .fa-chevron-down{
-    color: #6c6c6c;
-    float: right;
-    line-height: 50px;
-}
 
 .accordion{
   width: 60%;
@@ -374,30 +310,4 @@ header{
 #portfolio li{
     padding-left: 10px;
     padding-right: 10px;
-}
-
-@media screen and (max-width: 1050px){
-  #body{
-    .box{
-
-    }
-    #writing{
-      ul{
-        width: 80%;
-      }
-    }
-    #skills{
-      img{
-        width: 80%;
-      }
-      .container{
-        .row{
-          .col-md-3{
-            text-align: left;
-          }
-        }
-        width: 80%;
-      }
-    }
-  }
 }
