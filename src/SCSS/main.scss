@@ -167,29 +167,8 @@ header{
     &:nth-of-type(even){
       background-color: #eee;
     }
-    .project{
-      margin: 0 auto 15px;
-      width: 100%;
-      text-align: left;
-      h3{
-        font-size: 1.2em;
-        text-transform: uppercase;
-      }
-      a{
-        color: $blue;
-        text-decoration: none;
-      }
-      p{
-        font-size: 1em;
-        margin-top: 2px;
-        width: 100%;
-      }
-      .links{
-        margin-top: 10px;
-        a{
-          -webkit-text-stroke: 1px $blue;
-        }
-      }
+    .thumb, .thumb img{
+      width: 150px;
     }
   }
   #portfolio{
@@ -278,16 +257,11 @@ header{
       img{
         width: 150px;
         height: 225px;
+        margin-bottom: 4px;
       }
       padding: 2px;
     }
   }
-}
-
-
-.accordion{
-  width: 60%;
-  margin: 0 auto;
 }
 
 .project-header{
@@ -311,4 +285,61 @@ header{
 #portfolio li{
     padding-left: 10px;
     padding-right: 10px;
+}
+
+#featured .project{
+  display: flex;
+
+  div{
+    margin: 0 10px;
+  }
+}
+
+#body .box .project{
+  margin: 0 auto 25px;
+  text-align: left;
+
+
+  h3{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-top: 0px;
+  }
+  a{
+    color: $blue;
+    text-decoration: none;
+  }
+  p{
+    font-size: 1em;
+    margin-top: 3px;
+    width: 100%;
+  }
+  .links{
+    margin-top: 10px;
+    a{
+      -webkit-text-stroke: 1px $blue;
+    }
+  }
+}
+
+@media screen and (max-width: 780px){
+  .projects{
+    margin: 0 auto;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #featured .project{
+    display: block;
+
+    .thumb, .thumb img{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    div{
+      margin: 0px;
+    }
+  }
 }

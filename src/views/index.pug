@@ -24,7 +24,7 @@ html(lang='en')
   body
     header
       nav
-        a.light(href = "#about") About
+        a.light(href = "http://blog.jeffreyshen.com") Blog
         a.light(href = "#featured") Featured Work
         a.light(href = "#portfolio") Portfolio
         a.light(href = "#books") Reading
@@ -44,75 +44,70 @@ html(lang='en')
         a(href = "https://twitter.com/jeffreyshen10" target = "_blank" title = "Twitter")
           i.fa.fa-fw.fa-twitter
     #body
-      #about.row.box.scrollbox
-        i.fa.icon.fa-fw.fa-user
-        h2 ABOUT ME
-        hr
-        br
-        p Hi, I'm Jeffrey! I'm a current senior at Phillips Academy in Massachusetts, though I'm originally from Los Angeles (🌴). Beyond being interested in CS &amp; politics, I like to read, run, and listen to podcasts. I'm a strong supporter of open source software, digital governance, and a free press. 
       #featured.row.box.scrollbox
         i.fa.icon.fa-fw.fa-star
         h2 FEATURED WORK
         hr
         br
         .projects
+          .project 
+            .thumb
+              img(src = "/Assets/Graphics/russia.png")
+            .text 
+              h3 Russian Internet Meddling
+              p A four-part data journalism series exploring Russian Internet meddling in American cyberspace. 
+              p.links
+                a(href = "https://github.com/DPCLab" target = "_blank") 
+                  i.fa.fa-fw.fa-code
+                a(href = "https://dpclab.org/russia" target = "_blank") 
+                  i.fa.fa-fw.fa-external-link 
+          .project 
+            .thumb
+              img(src = "/Assets/Graphics/china.jpg")
+            .text 
+              h3 Weibo Censorship Dashboard
+              a(href = "https://ssrn.com/abstract=3266193" target = "_blank") Read the research paper!
+              p A nearly real-time, fully open-source feed of censorship on the popular Chinese social media site Weibo.
+              p.links
+                a(href = "https://github.com/DPCLab" target = "_blank") 
+                  i.fa.fa-fw.fa-code
+                a(href = "https://dpclab.org/china/dashboard" target = "_blank") 
+                  i.fa.fa-fw.fa-external-link 
           .project
-            h3 Russian Internet Meddling
-            p A four-part blog series exploring Russian Internet meddling in American cyberspace. 
-            p.links
-              a(href = "https://github.com/DPCLab" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "https://dpclab.org/russia" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
+            .thumb
+              img(src = "/Assets/Graphics/gerrymandering.png")
+            .text
+              h3 Is My District Gerrymandered? 
+              p Data visualization project that estimates how gerrymandered a congressional district is. Received the 2018-2019 Congressional App Challenge Award for MA's 6th District.
+              p.links
+                a(href = "https://github.com/jeffreyshen19/Is-My-District-Gerrymandered" target = "_blank") 
+                  i.fa.fa-fw.fa-code
+                a(href = "http://ismydistrictgerrymandered.us" target = "_blank") 
+                  i.fa.fa-fw.fa-external-link 
           .project
-            h3 Weibo Censorship Dashboard
-            a(href = "https://ssrn.com/abstract=3266193" target = "_blank") Read the research paper.
-            p An almost real-time, fully open-source feed of censorship on the popuar Chinese social media site Weibo.
-            p.links
-              a(href = "https://github.com/DPCLab" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "https://dpclab.org/china/dashboard" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
+            .thumb 
+              img(src = "/Assets/Graphics/sota.png")
+            .text 
+              h3 State of the Academy 2018  
+              p A website visualizing the results of <i>The Phillipian</i>'s State of the Academy survey, an annual survey covering politics, academics, wellness, and culture at Phillips Academy. 
+              p.links
+                a(href = "https://github.com/phillipian/State-of-the-Academy-2018" target = "_blank") 
+                  i.fa.fa-fw.fa-code
+                a(href = "http://sota.phillipian.net" target = "_blank") 
+                  i.fa.fa-fw.fa-external-link
           .project
-            h3 Political Cartoon Visualizer
-            a(href = "              https://blogs.loc.gov/thesignal/2018/08/exploring-late-1800s-political-cartoons-through-interactive-data-visualizations/" target = "_blank") Featured on the LC Labs blog!
-            p An exploration of the late 1800s through political cartoons of the era. Developed for an internship with the Library of Congress.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/political-cartoon-visualizer" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "https://jeffreyshen19.github.io/political-cartoon-visualizer/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          .project
-            h3 Seats-Votes Curves
-            p A historical primer on Congressional seat-votes curves and partisan bias, symmetry, and responsiveness, from 2000 - 2016.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Seats-Votes-Curves" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "https://jeffreyshen19.github.io/Seats-Votes-Curves/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          .project
-            h3 Is My District Gerrymandered? 
-            p A website which tells you if your congressional district is gerrymandered.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Is-My-District-Gerrymandered" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://ismydistrictgerrymandered.us" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          .project
-            h3 State of the Academy 2018  
-            p A website for <i>The Phillipian</i>'s annual State of the Academy survey.
-            p.links
-              a(href = "https://github.com/phillipian/State-of-the-Academy-2018" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://sota.phillipian.net" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Virtual IoT Server
-            p Code developed as part of a cybersecurity internship with Dr. Peter Reiher @ UCLA. Sets up a virtual server to secure previously unencrypted Internet of Things communication
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Virtual-IoT-Server" target = "_blank") 
-                i.fa.fa-fw.fa-code  
-      #portfolio.row.box.scrollbox
+            .thumb 
+              img(src = "/Assets/Graphics/loc.jpg")
+            .text 
+              h3 Political Cartoon Visualizer
+              a(href = "https://blogs.loc.gov/thesignal/2018/08/exploring-late-1800s-political-cartoons-through-interactive-data-visualizations/" target = "_blank") Featured on the LC Labs blog!
+              p An exploration of the late 1800s through political cartoons of the era. Developed for an internship with the Library of Congress.
+              p.links
+                a(href = "https://github.com/jeffreyshen19/political-cartoon-visualizer" target = "_blank") 
+                  i.fa.fa-fw.fa-code
+                a(href = "https://jeffreyshen19.github.io/political-cartoon-visualizer/" target = "_blank") 
+                  i.fa.fa-fw.fa-external-link 
+      #portfolio.row.box.scrollbox 
         i.fa.icon.fa-fw.fa-briefcase
         h2 PORTFOLIO
         hr
@@ -215,6 +210,12 @@ html(lang='en')
             p.links
               a(href = "https://github.com/jeffreyshen19/BillScraper.js" target = "_blank") 
                 i.fa.fa-fw.fa-code 
+          .project
+            h3 Virtual IoT Server
+            p Code developed as part of a cybersecurity internship with Dr. Peter Reiher @ UCLA. Sets up a virtual server to secure previously unencrypted Internet of Things communication
+            p.links
+              a(href = "https://github.com/jeffreyshen19/Virtual-IoT-Server" target = "_blank") 
+                i.fa.fa-fw.fa-code  
           br
           br
           .project-header Miscellaneous
