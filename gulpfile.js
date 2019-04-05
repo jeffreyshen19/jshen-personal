@@ -4,7 +4,7 @@ var pug = require('gulp-pug');
 var minify = require('gulp-minify');
 var webserver = require('gulp-webserver');
 
-gulp.task('default', ['webserver'], function() {
+gulp.task('default', ['webserver', 'views', 'sass', 'compress'], function() {
   gulp.watch('src/SCSS/*.scss', ['sass']);
   gulp.watch('src/views/*.pug', ['views']);
   gulp.watch('src/*.js', ['compress']);
