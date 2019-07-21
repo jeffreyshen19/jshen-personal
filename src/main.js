@@ -18,22 +18,21 @@ $(function(){
     for(var i = 0; i < 5; i++){
       var imageURL;
 
-      if(!data[i].image_url.includes("nophoto")){
-        var numberOfMs = 0;
-        imageURL = data[i].image_url;
-
-        for(var j = 0; j < imageURL.length; j++){
-          if(imageURL.charAt(j) == 'm'){
-            numberOfMs++;
-            if(numberOfMs == 3) {
-              imageURL = imageURL.substring(0, j) + "l" + imageURL.substring(j + 1);
-              j = imageURL.length;
-            }
-          }
-        }
-      }
-      else if(data[i].isbn13.nil) imageURL = data[i].image_url;
-      else imageURL = "http://covers.openlibrary.org/b/isbn/"+ data[i].isbn13 + "-L.jpg";
+      // if(!data[i].image_url.includes("nophoto")){
+      //   var numberOfMs = 0;
+      //   imageURL = data[i].image_url;
+      //
+      //   for(var j = 0; j < imageURL.length; j++){
+      //     if(imageURL.charAt(j) == 'm'){
+      //       numberOfMs++;
+      //       if(numberOfMs == 3) {
+      //         imageURL = imageURL.substring(0, j) + "l" + imageURL.substring(j + 1);
+      //         j = imageURL.length;
+      //       }
+      //     }
+      //   }
+      // }
+      imageURL = data[i].image_url.replace("._SX98_.", ".");
 
       $("#loading").hide();
       $("#books-row").append("<a class = 'book' target = '_blank' href = '" + data[i].link + "'><img src = '" + imageURL + "'></a>");
