@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var minify = require('gulp-minify');
 var webserver = require('gulp-webserver');
+var projects = require('./src/projects.json');
 
 gulp.task('default', ['webserver', 'views', 'sass', 'compress'], function() {
   gulp.watch('src/SCSS/*.scss', ['sass']);
@@ -12,7 +13,11 @@ gulp.task('default', ['webserver', 'views', 'sass', 'compress'], function() {
 
 gulp.task('views', function buildHTML() {
   return gulp.src('src/views/*.pug')
-    .pipe(pug())
+    .pipe(pug({
+        data: {
+            projects: projects
+        }
+    }))
     .pipe(gulp.dest('.'));
 });
 
