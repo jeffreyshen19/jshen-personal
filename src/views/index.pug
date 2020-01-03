@@ -49,63 +49,23 @@ html(lang='en')
         h2 FEATURED WORK
         hr
         br
-        .projects
-          .project 
-            .thumb
-              img(src = "/Assets/Graphics/russia.png")
-            .text 
-              h3 Russian Internet Meddling
-              p A four-part data journalism series exploring Russian Internet meddling in American cyberspace. 
-              p.links
-                a(href = "https://github.com/DPCLab" target = "_blank") 
-                  i.fa.fa-fw.fa-code
-                a(href = "https://dpclab.org/russia" target = "_blank") 
-                  i.fa.fa-fw.fa-external-link 
-          .project 
-            .thumb
-              img(src = "/Assets/Graphics/china.jpg")
-            .text 
-              h3 Weibo Censorship Dashboard
-              a(href = "https://ssrn.com/abstract=3266193" target = "_blank") Read the research paper!
-              p A nearly real-time, fully open-source feed of censorship on the popular Chinese social media site Weibo.
-              p.links
-                a(href = "https://github.com/DPCLab" target = "_blank") 
-                  i.fa.fa-fw.fa-code
-                a(href = "https://dpclab.org/china/dashboard" target = "_blank") 
-                  i.fa.fa-fw.fa-external-link 
-          .project
-            .thumb
-              img(src = "/Assets/Graphics/gerrymandering.png")
-            .text
-              h3 Is My District Gerrymandered? 
-              p Data visualization project that estimates how gerrymandered a congressional district is. Received the 2018-2019 Congressional App Challenge Award for MA's 6th District.
-              p.links
-                a(href = "https://github.com/jeffreyshen19/Is-My-District-Gerrymandered" target = "_blank") 
-                  i.fa.fa-fw.fa-code
-                a(href = "http://ismydistrictgerrymandered.us" target = "_blank") 
-                  i.fa.fa-fw.fa-external-link 
-          .project
-            .thumb 
-              img(src = "/Assets/Graphics/pollpa.png")
-            .text 
-              h3 PollPA 
-              p An anonymous platform to poll Phillips Academy students on important issues, in real-time. Received over 2,000 visitors a week.
-              p.links
-                a(href = "https://github.com/pollpa/PollPA" target = "_blank") 
-                  i.fa.fa-fw.fa-code
-                a(href = "https://pollpa.com" target = "_blank") 
-                  i.fa.fa-fw.fa-external-link
-          .project
-            .thumb 
-              img(src = "/Assets/Graphics/sota.png")
-            .text 
-              h3 State of the Academy 2018  
-              p A website visualizing the results of <i>The Phillipian</i>'s State of the Academy survey, an annual survey covering politics, academics, wellness, and culture at Phillips Academy. 
-              p.links
-                a(href = "https://github.com/phillipian/State-of-the-Academy-2018" target = "_blank") 
-                  i.fa.fa-fw.fa-code
-                a(href = "http://sota.phillipian.net/year/2018" target = "_blank") 
-                  i.fa.fa-fw.fa-external-link
+        .projects 
+            each project in projects.projects
+                if project.featured 
+                    .project 
+                        .thumb
+                            img(src = "/Assets/Graphics/" + project.image)
+                        .text 
+                            h3= project.title
+                            if project.highlight
+                                a(href = project.highlight.url target = "_blank")= project.highlight.text
+                            p= project.subtitle
+                            p.links
+                                each link in project.links
+                                    a(href = link.url target = "_blank") 
+                                        i(class = "fa fa-fw " + link.icon)
+                
+
       #portfolio.row.box.scrollbox 
         i.fa.icon.fa-fw.fa-briefcase
         h2 PORTFOLIO
