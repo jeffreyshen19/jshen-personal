@@ -54,7 +54,11 @@ html(lang='en')
                 if project.featured 
                     .project 
                         .thumb
-                            img(src = "/Assets/Graphics/" + project.image)
+                            if project.links.length == 2
+                                a(href = project.links[1].url target = "_blank")
+                                    img(src = "/Assets/Graphics/" + project.image)
+                            else 
+                                img(src = "/Assets/Graphics/" + project.image)
                         .text 
                             h3= project.title
                             if project.highlight
