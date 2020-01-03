@@ -323,6 +323,14 @@ header{
     a{
       -webkit-text-stroke: 1px $blue;
     }
+    .fa {
+      font-size: 15px;
+      vertical-align: top;
+    }
+    .fa-external-link {
+        margin-top: 1px;
+        margin-left: -1px;
+    }
   }
 }
 
