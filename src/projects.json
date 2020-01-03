@@ -41,8 +41,11 @@
         },
         {
             "title": "Is My District Gerrymandered?",
-            "subtitle": "Data visualization project that estimates how gerrymandered a congressional district is. Received the 2018-2019 Congressional App Challenge Award for MA's 6th District.",
-            "highlight": null,
+            "subtitle": "Data visualization project that estimates how gerrymandered a congressional district is.",
+            "highlight": {
+                "url": "https://www.congressionalappchallenge.us/2018-ma6/",
+                "text": "Winner of the 2018-2019 Congressional App Challenge! (MA-6)"
+            },
             "image": "gerrymandering.png",
             "featured": true,
             "category": null,
@@ -171,60 +174,6 @@
                 },
                 {
                     "url": "http://techmasters.io",
-                    "icon": "fa-external-link"
-                }
-            ]
-        },
-        {
-            "title": "Andover / Exeter Day Website 2017",
-            "subtitle": "Website for <i>The Phillipian</i>'s 2017 coverage of AE Day.",
-            "highlight": null,
-            "image": null,
-            "featured": false,
-            "category": "websites",
-            "links": [
-                {
-                    "url": "https://github.com/phillipian/aeday-2017",
-                    "icon": "fa-code"
-                },
-                {
-                    "url": "http://aeday.phillipian.net",
-                    "icon": "fa-external-link"
-                }
-            ]
-        },
-        {
-            "title": "Polar Area Calculator",
-            "subtitle": "An interactive polar grapher that can solve for the area bounded by polar curves. Created as a final calculus project for future calculus students at Phillips Academy.",
-            "highlight": null,
-            "image": null,
-            "featured": false,
-            "category": "websites",
-            "links": [
-                {
-                    "url": "https://github.com/jeffreyshen19/Polar-Area-Calculator",
-                    "icon": "fa-code"
-                },
-                {
-                    "url": "https://jeffreyshen19.github.io/Polar-Area-Calculator/",
-                    "icon": "fa-external-link"
-                }
-            ]
-        },
-        {
-            "title": "Level Curve Plotter",
-            "subtitle": "A project for Math 650 at Andover that plots and solves level curves and partial derivatives.",
-            "highlight": null,
-            "image": null,
-            "featured": false,
-            "category": "websites",
-            "links": [
-                {
-                    "url": "https://github.com/jeffreyshen19/Level-Curve-Plotter",
-                    "icon": "fa-code"
-                },
-                {
-                    "url": "https://jeffreyshen19.github.io/Level-Curve-Plotter/",
                     "icon": "fa-external-link"
                 }
             ]
@@ -419,7 +368,7 @@
     "categories": [
         {
             "id": "websites",
-            "title": "Websites"
+            "title": "Web Development"
         },
         {
             "id": "data-vis",
