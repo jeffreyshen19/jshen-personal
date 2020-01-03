@@ -59,162 +59,30 @@ html(lang='en')
                             h3= project.title
                             if project.highlight
                                 a(href = project.highlight.url target = "_blank")= project.highlight.text
-                            p= project.subtitle
+                            p!= project.subtitle
                             p.links
                                 each link in project.links
                                     a(href = link.url target = "_blank") 
                                         i(class = "fa fa-fw " + link.icon)
-                
-
       #portfolio.row.box.scrollbox 
         i.fa.icon.fa-fw.fa-briefcase
         h2 PORTFOLIO
         hr
         br
         .projects
-          .project-header Websites
-          .project
-            h3 The Printer @ PA 
-            p The website for the The Printer @ PA, an organization at Phillips Academy that prints custom t-shirts. Written using Node.js, Pug (An HTML preprocessor), and SCSS.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Printer-at-PA" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://www.theprinteratpa.com" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Blue Moon
-            p The website for Blue Moon, the first print and online STEM magazine at Phillips Academy. Written on the Jekyll framework, using ruby, HTML, and CSS.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Blue-Moon" target = "_blank") 
-                i.fa.fa-fw.fa-code
-          .project
-            h3 Anonymous News Tips
-            p An anonymous website to submit news tips for <i>The Phillipian</i>.
-            p.links
-              a(href = "http://github.com/phillipian/anonymous-tipbox" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://tips.phillipian.net" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          .project
-            h3 Website for Dr. Van Savage
-            p A personal webpage for Dr. Savage, Professor at UCLA. Written using standard HTML, CSS, and Javascript.
-            p.links
-              a(href = "http://faculty.biomath.ucla.edu/vsavage/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Techmasters
-            p Website for Techmasters, a student run organization dedicated to providing tech help for the Phillips Academy Community. Written using HTML and CSS.
-            p.links
-              a(href = "https://github.com/PATechmasters/techmasters.io" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://techmasters.io" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Andover / Exeter Day Website 2017
-            p Website for <i>The Phillipian</i>'s 2017 coverage of AE Day. 
-            p.links
-              a(href = "https://github.com/phillipian/aeday-2017" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://aeday.phillipian.net" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Polar Area Calculator
-            p An interactive polar grapher that can solve for the area bounded by polar curves. Created as a final calculus project for future calculus students at Phillips Academy.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Polar-Area-Calculator" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "https://jeffreyshen19.github.io/Polar-Area-Calculator/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Level Curve Plotter
-            p A project for Math 650 at Andover that plots and solves level curves and partial derivatives.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Level-Curve-Plotter" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "https://jeffreyshen19.github.io/Level-Curve-Plotter/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          br
-          br
-          .project-header Data Visualization
-          .project
-            h3 Rename Racist Places
-            p Many federally recognized places still include racial slurs in their official name. A tool to see where they are—and how to rename them.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Rename-Racist-Places" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://racistplaces.us" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          .project
-            h3 Political Cartoon Visualizer
-            a(href = "https://blogs.loc.gov/thesignal/2018/08/exploring-late-1800s-political-cartoons-through-interactive-data-visualizations/" target = "_blank") Featured on the LC Labs blog!
-            p An exploration of the late 1800s through political cartoons of the era. Developed for an internship with the Library of Congress.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/political-cartoon-visualizer" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "https://jeffreyshen19.github.io/political-cartoon-visualizer/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          .project
-            h3 Civil Asset Forfeiture in California
-            p Data visualization showing civil asset forfeitures by county in California. Created using Javascript and D3.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Asset-Forfeiture-in-California" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://jeffreyshen19.github.io/Asset-Forfeiture-in-California/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link 
-          .project
-            h3 The Spread of Communism
-            p A data visualization showing the rise and fall of global communism, from 1917 to 2017. Created using leaflet and JS.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/The-Spread-of-Communism" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "https://jeffreyshen19.github.io/The-Spread-of-Communism/" target = "_blank")  
-                i.fa.fa-fw.fa-external-link 
-          br
-          br
-          .project-header Open Source
-          .project
-            h3 Parallax.c
-            p An extensible library of code developed to make programming competitive VEX robots easier. Developed as part of Phillips Academy's VEX robotics program. 
-            p.links
-              a(href = "https://github.com/PARobotics/Robotics-Library" target = "_blank") 
-                i.fa.fa-fw.fa-code 
-          .project
-            h3 BillScraper.js
-            p Open Source NPM module which aids in scraping, parsing, and analyzing congressional bills. 
-            p.links
-              a(href = "https://github.com/jeffreyshen19/BillScraper.js" target = "_blank") 
-                i.fa.fa-fw.fa-code 
-          .project
-            h3 Virtual IoT Server
-            p Code developed as part of a cybersecurity internship with Dr. Peter Reiher @ UCLA. Sets up a virtual server to secure previously unencrypted Internet of Things communication
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Virtual-IoT-Server" target = "_blank") 
-                i.fa.fa-fw.fa-code  
-          br
-          br
-          .project-header Miscellaneous
-          .project
-            h3 Spotify Notifications 
-            p Receive emails everytime someone follows/unfollows your profile or one of your playlists.
-            p.links
-              a(href = "https://github.com/jeffreyshen19/Spotify-Notifications" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "http://spotify-notifications.herokuapp.com/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 Spotify Favorites 
-            p Automatically generate a playlist of your 15 favorite songs on Spotify. 
-            p.links
-              a(href = "https://github.com/jeffreyshen19/spotify-favorites" target = "_blank") 
-                i.fa.fa-fw.fa-code
-              a(href = "https://spotify-favorites.herokuapp.com/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
-          .project
-            h3 RegEx Snippets
-            p Collection of useful RegEx snippets.
-            p.links
-              a(href = "https://jeffreyshen19.github.io/RegEx-Snippets/" target = "_blank") 
-                i.fa.fa-fw.fa-external-link
+            each category in projects.categories
+                .project-header= category.title 
+                each project in projects.projects 
+                    if project.category == category.id
+                        .project 
+                            h3= project.title
+                            if project.highlight
+                                a(href = project.highlight.url target = "_blank")= project.highlight.text
+                            p!= project.subtitle
+                            p.links
+                                each link in project.links
+                                    a(href = link.url target = "_blank") 
+                                        i(class = "fa fa-fw " + link.icon)
       #books.row.box.scrollbox
         i.fa.fa-fw.icon.fa-book
         h2 BOOKS I'VE RECENTLY READ
