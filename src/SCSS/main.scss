@@ -175,6 +175,30 @@ header{
       width: 150px;
     }
   }
+
+  #about{
+      #about-container{
+          .left{
+              width: 250px;
+              margin-right: 25px;
+              float: left;
+
+              img{
+                  width: 100%;
+              }
+          }
+
+          .right{
+              overflow: hidden;
+              p{
+                  margin: 0;
+                  width: 100%;
+                  text-align: left;
+              }
+          }
+      }
+  }
+
   #portfolio{
     .portfolio-boxes{
       width: 90%;
@@ -275,7 +299,7 @@ header{
   margin: 10px 0;
 }
 
-.projects{
+.projects, #about-container{
   margin: 0 auto;
   width: 60%;
 }
@@ -335,10 +359,21 @@ header{
 }
 
 @media screen and (max-width: 780px){
-  .projects{
+  .projects, #about-container{
     margin: 0 auto;
     width: 75%;
   }
+}
+
+@media screen and (max-width: 650px){
+    #body #about #about-container{
+        .left{
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 25px;
+            float: none;
+        }
+    }
 }
 
 @media screen and (max-width: 500px){
