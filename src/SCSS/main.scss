@@ -21,6 +21,10 @@ $gray: #9baec8;
 $white: #d9e1e8;
 $blue: #2b90d9;
 
+html{
+    overflow-y: scroll;
+}
+
 body{
   font-family: "IBM Plex Sans";
   overflow-x: hidden;
