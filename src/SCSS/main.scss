@@ -19,7 +19,7 @@
 $black: #282c37;
 $gray: #9baec8;
 $white: #d9e1e8;
-$blue: #2b90d9;
+$blue: #4b6cb7;
 
 html{
     overflow-y: scroll;
@@ -80,9 +80,9 @@ header{
   width: 100vw;
   position: relative;
   height: 95vh;
-  background: #2980b9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #182848;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 
   nav{
