@@ -79,7 +79,7 @@ a.light{
 header{
   width: 100vw;
   position: relative;
-  height: 95vh;
+  height: 90vh;
   background: #182848;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -106,7 +106,6 @@ header{
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-
     h1{
       font-size: 4em;
     }
@@ -114,8 +113,7 @@ header{
       font-size: 1.4em;
       max-width: 700px;
       margin: 0 auto;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 0 20px;
     }
     .btn:first-of-type{
       margin-right: 5px;
@@ -391,6 +389,18 @@ header{
 
     div{
       margin: 0px;
+    }
+  }
+
+  header center{
+    h1{
+      font-size: 3em;
+    }
+    p{
+      font-size: 1.2em;
+    }
+    .btn{
+      font-size: 1em;
     }
   }
 }
