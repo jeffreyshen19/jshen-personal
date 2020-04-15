@@ -14,5 +14,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "font-awesome": "^5.13.0",
+    "jquery": "^3.5.0",
+    "bulma": "^0.8.2"
+  }
 }

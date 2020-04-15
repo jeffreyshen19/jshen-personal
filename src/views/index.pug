@@ -15,99 +15,11 @@ html(lang='en')
     meta(name = "description" content = "Jeffrey Shen is a student at MIT studying computer science and politics.")
     meta(name = "author" content = "Jeffrey Shen")
     title Jeffrey Shen
-    link(href='Assets/bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet', type='text/css')
-    link(href='Assets/bower_components/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='bower_components/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='bower_components/bulma/css/bulma.min.css', rel='stylesheet', type='text/css')
     link(href='dist/CSS/main.css', rel='stylesheet', type='text/css')
-    script(src='Assets/bower_components/jquery/dist/jquery.min.js')
-    script(src='Assets/bower_components/bootstrap/dist/js/bootstrap.min.js')
+      
+    script(src='bower_components/jquery/dist/jquery.min.js'))
     script(src='dist/main-min.js')
   body
-    header
-      nav
-        a.light(href = "http://blog.jeffreyshen.com") Blog
-        a.light(href = "#about") About
-        a.light(href = "#featured") Portfolio
-      center
-        h1 Hi! I'm Jeffrey
-        p I'm a student and programmer at MIT interested in the intersection between computer science, politics, and culture. 
-        br
-        a.btn(href='mailto:jeffreyshencc@gmail.com') Contact Me
-        a.btn(href = "http://bit.ly/2vjX9LC" target = "_blank") View Resume
-      #bottom
-        i.caption Scroll for more
-        br
-        a(href = "https://github.com/jeffreyshen19" target = "_blank" title = "Github")
-          i.fa.fa-github.fa-fw
-        a(href = "https://www.linkedin.com/in/jeffrey-shen-39576ab1/" target = "_blank" title = "LinkedIn")
-          i.fa.fa-fw.fa-linkedin-square
-        a(href = "https://twitter.com/jeffreyshen10" target = "_blank" title = "Twitter")
-          i.fa.fa-fw.fa-twitter
-    #body
-      #about.row.box.scrollbox 
-        i.fa.icon.fa-fw.fa-user 
-        h2 ABOUT 
-        hr 
-        br 
-        #about-container 
-            .left 
-                img(src = "/Assets/Graphics/profile.jpg")
-            .right 
-                p Hey! I'm Jeffrey (he/him), a student at MIT studying Computer Science and Urban Planning (11-6), with a minor in Political Science. I want to use technology to bring clarity and transparency to politics, and am especially interested in data journalism, city planning, open source software, and civic tech.  
-                br
-                p Currently, I'm an undergraduate researcher working on LobbyView, a database of money in U.S. politics, and am also a volunteer data analyst for Sri Kulkarni's 2020 Congressional campaign. I also run a <a href = "http://blog.jeffreyshen.com">blog</a> and a <a href = "http://notes.jeffreyshen.com">micro-blog</a>, where I write about data visualization, politics, and more!
-
-      #featured.row.box.scrollbox
-        i.fa.icon.fa-fw.fa-star
-        h2 FEATURED WORK
-        hr
-        br
-        .projects 
-            each project in projects.projects
-                if project.featured 
-                    .project 
-                        .thumb
-                            if project.links.length == 2
-                                a(href = project.links[1].url target = "_blank")
-                                    img(src = "/Assets/Graphics/" + project.image)
-                            else 
-                                img(src = "/Assets/Graphics/" + project.image)
-                        .text 
-                            h3= project.title
-                            if project.highlight
-                                a(href = project.highlight.url target = "_blank")= project.highlight.text
-                            p!= project.subtitle
-                            p.links
-                                each link in project.links
-                                    a(href = link.url target = "_blank") 
-                                        i(class = "fa fa-fw " + link.icon) 
-      //-
-          #portfolio.row.box.scrollbox 
-            i.fa.icon.fa-fw.fa-briefcase
-            h2 PORTFOLIO
-            hr
-            br
-            .projects
-                each category in projects.categories
-                    .project-header= category.title 
-                    each project in projects.projects 
-                        if project.category == category.id
-                            .project 
-                                h3= project.title
-                                if project.highlight
-                                    a(href = project.highlight.url target = "_blank")= project.highlight.text
-                                p!= project.subtitle
-                                p.links
-                                    each link in project.links
-                                        a(href = link.url target = "_blank") 
-                                            i(class = "fa fa-fw " + link.icon)
-      #books.row.box.scrollbox
-        i.fa.fa-fw.icon.fa-book
-        h2 BOOKS I'VE RECENTLY READ
-        hr
-        p I love to read! Here are some books I just finished reading:
-        br 
-        #loading
-          i.fa-2x.fa.fa-spinner.fa-spin
-        #books-row
-        br
-        p Check out my Goodreads profile <a href = "https://www.goodreads.com/user/show/45848993-jeffrey" target = "_blank">here</a>.
+  
