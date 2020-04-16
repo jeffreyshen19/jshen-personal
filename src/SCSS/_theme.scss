@@ -9,6 +9,12 @@
   src: url("/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
 }
 
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf");
+  font-weight: bold;
+}
+
 h1{
   font-family: "Playfair";
 }
