@@ -53,5 +53,21 @@
       margin-bottom: 40px;
     }
 
+    .project{
+      margin-bottom: 30px;
+
+      img{
+        width: 200px;
+      }
+
+      .text{
+        margin-top: -5px;
+
+        strong{
+          font-size: 20px;
+        }
+      }
+    }
+
   }
 }
