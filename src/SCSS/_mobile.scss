@@ -1,0 +1,66 @@
+@media screen and (max-width: 1100px){
+  #wrapper #content{
+    padding-left: 0px;
+
+    h2{
+      margin-bottom: 0;
+    }
+
+    .project{
+      display: inline;
+
+      .column{
+        padding: 0;
+      }
+
+      img{
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  #mobile-profile{
+    display: none;
+  }
+
+  hr{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+  hr{
+    margin-bottom: -10px;
+  }
+
+  #profile{
+    display: none;
+  }
+
+  #wrapper{
+    display: block;
+    padding: 30px 40px;
+
+    div{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    #sidebar{
+      text-align: center;
+      width: 100%;
+
+      section{
+        position: relative;
+
+        .links p{
+          display: inline;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

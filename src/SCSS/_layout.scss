@@ -1,3 +1,7 @@
+body{
+  overflow: hidden;
+}
+
 #wrapper{
   padding: 30px 60px;
 
@@ -7,8 +11,10 @@
 
     section{
       position: fixed;
-      img{
+
+      #profile{
         width: 225px;
+        margin-top: 10px;
         margin-bottom: 10px;
       }
 
@@ -42,7 +48,13 @@
   }
 
   #content{
-    padding: 18px 0 0 30px;
+    padding-top: 18px;
+    padding-left: 30px;
+
+    #mobile-profile{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
 
     p{
       max-width: 600px;
