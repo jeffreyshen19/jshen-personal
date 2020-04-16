@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: "Playfair";
+  src: url("/assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
   font-family: "IBMPlexSans";
   src: url("/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
 }
@@ -20,6 +26,12 @@ $blue: #3a539b;
 
 h1{
   font-family: "Playfair";
+  font-weight: bold;
+}
+
+h2{
+  font-family: "Playfair";
+  font-weight: normal;
 }
 
 p, a {
