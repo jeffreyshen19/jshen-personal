@@ -9,26 +9,26 @@ body{
     width: 350px;
     position: relative;
 
+    a {
+      color: $black;
+      transition: 0.2s;
+
+      &:hover{
+        color: $blue;
+      }
+    }
+
     section{
       position: fixed;
 
       #profile{
         width: 225px;
-        margin-top: 10px;
+        margin-top: 14px;
         margin-bottom: 10px;
       }
 
       .links{
         margin-bottom: 10px;
-
-        a {
-          color: $black;
-          transition: 0.2s;
-
-          &:hover{
-            color: $blue;
-          }
-        }
       }
 
       .links-large{
@@ -41,7 +41,7 @@ body{
 
       .links-icon{
         i{
-          margin-right: 7px;
+          margin-right: 8px;
         }
       }
     }

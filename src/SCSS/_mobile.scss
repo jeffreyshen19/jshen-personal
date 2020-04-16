@@ -22,11 +22,7 @@
 }
 
 @media screen and (min-width: 768px){
-  #mobile-profile{
-    display: none;
-  }
-
-  hr{
+  #mobile-profile, hr{
     display: none;
   }
 }
@@ -34,6 +30,14 @@
 @media screen and (max-width: 768px){
   hr{
     margin-bottom: -10px;
+  }
+
+  .links-large, #subtitle{
+    display: none;
+  }
+
+  .links-small{
+    margin-top: -1.5rem;
   }
 
   #profile{
@@ -58,7 +62,7 @@
 
         .links p{
           display: inline;
-          margin-right: 5px;
+          margin-right: 10px;
         }
       }
     }
