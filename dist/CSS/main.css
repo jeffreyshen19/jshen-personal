@@ -1,1 +1,1 @@
-@font-face{font-family:"Playfair";src:url("/assets/fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf");font-weight:bold}h1{font-family:"Playfair"}#wrapper{padding:30px 40px}
+@font-face{font-family:"Playfair";src:url("/assets/fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf");font-weight:bold}@font-face{font-family:"IBMPlexSans";src:url("/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf")}h1{font-family:"Playfair"}p{font-family:"IBMPlexSans"}#wrapper{padding:30px 40px}#wrapper .column.is-narrow{width:380px}

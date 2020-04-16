@@ -4,6 +4,15 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
+}
+
 h1{
   font-family: "Playfair";
+}
+
+p{
+  font-family: "IBMPlexSans";
 }
