@@ -12,6 +12,15 @@
 
     .links{
       margin-bottom: 10px;
+
+      a {
+        color: $black;
+        transition: 0.2s;
+
+        &:hover{
+          color: $blue;
+        }
+      }
     }
 
     .links-large{
