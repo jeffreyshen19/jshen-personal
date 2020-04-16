@@ -21,6 +21,12 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Italic.ttf");
+  font-style: italic;
+}
+
 $black: #4a4a4a;
 $blue: #3a539b;
 
