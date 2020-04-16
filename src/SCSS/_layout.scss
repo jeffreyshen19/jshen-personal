@@ -3,42 +3,46 @@
 
   #sidebar{
     width: 350px;
+    position: relative;
 
-    img{
-      width: 225px;
-      margin-bottom: 10px;
-    }
+    section{
+      position: fixed;
+      img{
+        width: 225px;
+        margin-bottom: 10px;
+      }
 
-    .links{
-      margin-bottom: 10px;
+      .links{
+        margin-bottom: 10px;
 
-      a {
-        color: $black;
-        transition: 0.2s;
+        a {
+          color: $black;
+          transition: 0.2s;
 
-        &:hover{
-          color: $blue;
+          &:hover{
+            color: $blue;
+          }
         }
       }
-    }
 
-    .links-large{
-      font-size: 18px;
-    }
+      .links-large{
+        font-size: 18px;
+      }
 
-    .links-small{
-      font-size: 14px;
-    }
+      .links-small{
+        font-size: 14px;
+      }
 
-    .links-icon{
-      i{
-        margin-right: 7px;
+      .links-icon{
+        i{
+          margin-right: 7px;
+        }
       }
     }
   }
 
   #content{
-    padding: 15px 0 0 30px;
+    padding: 18px 0 0 30px;
 
     p{
       max-width: 600px;
