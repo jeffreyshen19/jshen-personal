@@ -1,9 +1,8 @@
 #wrapper{
   padding: 30px 60px;
 
-  // Sidebar
-  .column.is-narrow{
-    width: 380px;
+  #sidebar{
+    width: 350px;
 
     img{
       width: 225px;
@@ -35,6 +34,23 @@
       i{
         margin-right: 7px;
       }
+    }
+  }
+
+  #content{
+    padding: 15px 0 0 80px;
+
+    p{
+      max-width: 600px;
+    }
+
+    a{
+      color: $blue;
+      text-decoration: underline;
+    }
+
+    section{
+      margin-bottom: 40px;
     }
   }
 }
