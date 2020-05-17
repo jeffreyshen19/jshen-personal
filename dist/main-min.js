@@ -1,1 +1,1 @@
-$(function(){$.get("https://jshen-labs.herokuapp.com/updates",function(a){for(var e=0;e<5;e++){var o;o=a[e].image_url.replace("._SX98_.","."),$("#loading").hide(),$("#books-row").append("<a class = 'book' target = '_blank' href = '"+a[e].link+"'><img src = '"+o+"'></a>")}})});
+function toggleName(){var e=document.getElementById("name");"chinese"==e.className?(e.innerHTML="Jeffrey Shen",e.className=""):(e.innerHTML="沈嘉成",e.className="chinese")}

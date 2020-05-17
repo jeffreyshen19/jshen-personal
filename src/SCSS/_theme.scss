@@ -35,6 +35,11 @@ h1{
   font-weight: bold;
 }
 
+#name{
+  cursor: pointer;
+  user-select: none;
+}
+
 h2{
   font-family: "Playfair";
   font-weight: normal;
