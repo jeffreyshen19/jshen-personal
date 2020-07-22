@@ -1,14 +1,11 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+
+sass.compiler = require('node-sass');
+
 var pug = require('gulp-pug');
 var minify = require('gulp-minify');
 var webserver = require('gulp-webserver');
-
-gulp.task('default', ['webserver', 'views', 'sass', 'compress'], function() {
-  gulp.watch('src/SCSS/*.scss', ['sass']);
-  gulp.watch('src/views/*.pug', ['views']);
-  gulp.watch('src/*.js', ['compress']);
-});
 
 gulp.task('views', function buildHTML() {
   return gulp.src('src/views/*.pug')
@@ -35,3 +32,11 @@ gulp.task('webserver', function() {
       open: true
     }));
 });
+
+gulp.task('watch', function () {
+  gulp.watch('src/SCSS/*.scss', gulp.series('sass'));
+  gulp.watch('src/views/*.pug', gulp.series('views'));
+  gulp.watch('src/*.js', gulp.series('compress'));
+});
+
+gulp.task('default', gulp.series('webserver', 'views', 'sass', 'compress', 'watch'));
