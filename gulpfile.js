@@ -36,7 +36,7 @@ gulp.task('webserver', function() {
 gulp.task('watch', function () {
   gulp.watch('src/SCSS/*.scss', gulp.series('sass'));
   gulp.watch('src/views/*.pug', gulp.series('views'));
-  gulp.watch('src/*.js', gulp.series('compress'));
+  // gulp.watch('src/*.js', gulp.series('compress'));
 });
 
-gulp.task('default', gulp.series('webserver', 'views', 'sass', 'compress', 'watch'));
+gulp.task('default', gulp.series('views', 'sass', gulp.parallel('watch', 'webserver')));
