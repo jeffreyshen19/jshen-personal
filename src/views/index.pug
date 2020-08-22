@@ -52,24 +52,13 @@ html(lang='en')
         section#about
           //- h1.is-size-3 About
           img#mobile-profile(src = "/assets/graphics/profile-illustration.jpg")
-          p Hey, I'm Jeffrey (he/him/他)! I study computer science and politics, with a concentration in comparative media studies, at MIT. I'm interested in using technology to bring clarity and transparency to politics, whether it be through data journalism, open source software, or civic tech. 
-            br
-            br
-            | I'm currently doing research in the MIT Media Lab's City Science Group, as well as the MIT Political Science Department, and am a volunteer data analyst for Sri Kulkarni's 2020 Congressional campaign. I also run a <a href = "https://blog.jeffreyshen.com" target = "_blank">blog</a> and a <a href = "https://notes.jeffreyshen.com" target = "_blank">micro-blog</a>, where I write about data visualization, politics, and more.
+          p Hey, I'm Jeffrey (he/him/他)! I study computer science and politics, with a concentration in comparative media studies, at MIT. I'm interested in using technology to bring clarity and transparency to politics, whether it be through data journalism, open source software, or civic tech. I also run a <a href = "https://blog.jeffreyshen.com" target = "_blank">blog</a> and a <a href = "https://notes.jeffreyshen.com" target = "_blank">micro-blog</a>, where I write about data visualization, politics, and more.
             br
             br
             | I can be reached by <a href = "mailto:jjshen@mit.edu">email</a> or through <a href = "https://twitter.com/jeffreyjshen">Twitter</a>!
         section#portfolio
           h1.is-size-3 Portfolio
           h2.is-size-5 Research 
-          .project.columns  
-            .thumb.column.is-narrow
-              img(src = "/assets/graphics/lobbyview.png")
-            .text.column 
-              p.is-size-6 Jan 2020 - Present  
-              p
-                strong LobbyView 
-              p Developing interactive data visualizations using D3 and React for LobbyView, a database of Congressional lobbying that aims to facilitate political science research and bring transparency to money in politics.
           .project.columns  
             .thumb.column.is-narrow
               img(src = "/assets/graphics/russia-new.png")
@@ -86,31 +75,6 @@ html(lang='en')
               p
                 strong Deciphering Chinese Censorship
               p Developed the <a href = "https://dpclab.org/china/dashboard/">Weibo Censorship Dashboard</a>, a nearly real-time, fully open-source feed of  censorship on the popular Chinese social media site Weibo. Published <a href = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3266193">paper</a> on SSRN. Completed as part of an Independent Project at Phillips Academy with <a href = "https://rmrm.io/">R. Miles McCain</a>, under the mentorship of John Palfrey, Michael Barker, and Malgorzata Stergios.
-          h2.is-size-5 Politics 
-          .project.columns  
-            .thumb.column.is-narrow
-              img(src = "/assets/graphics/bluebonnet.png")
-            .text.column 
-              p.is-size-6 Jan 2020 - Present 
-              p
-                strong Bluebonnet Data Fellow
-              p Volunteer data analyst, using Python and GIS to help down-ballot, Democratic candidates win in swing districts. Currently working with Sri Kulkarni's campaign for the U.S. House of Representatives. 
-          .project.columns  
-            .thumb.column.is-narrow
-              img(src = "/assets/graphics/gerrymandering.png")
-            .text.column 
-              p.is-size-6 2018
-              p
-                strong Is My District Gerrymandered? 
-              p Created an <a href = "http://ismydistrictgerrymandered.us">interactive website</a> that estimates how gerrymandered a U.S. congressional district is, using geometry and election results. Project <a href = "https://www.congressionalappchallenge.us/2018-ma6/">won the 2018 Congressional App Challenge</a> in Massachusetts's 6th District. 
-          .project.columns  
-            .thumb.column.is-narrow
-              img(src = "/assets/graphics/seats-votes.png")
-            .text.column 
-              p.is-size-6 Spring 2018
-              p
-                strong Exploring the Seats-Votes Curve
-              p Developed an <a href = "https://jeffreyshen19.github.io/Seats-Votes-Curves/">interactive, data-driven explainer</a> of the seats-votes curve, a measure of fairness in redistricting. Built with D3.
           h2.is-size-5 Data Visualization 
           .project.columns  
             .thumb.column.is-narrow
@@ -136,7 +100,48 @@ html(lang='en')
               p
                 strong State of the Academy
               p Created a <a href = "https://sota.phillipian.net/year/2018/">website</a> of interactive visualizations showing the results of <i>The Phillipian</i>'s State of the Academy survey, an annual survey covering politics, academics, wellness, and culture at my high school. Built with D3.
+          h2.is-size-5 Politics 
+          .project.columns  
+            .thumb.column.is-narrow
+              img(src = "/assets/graphics/bluebonnet.png")
+            .text.column 
+              p.is-size-6 Jan 2020 - Present 
+              p
+                strong Bluebonnet Data Fellow
+              p Volunteer data analyst, using Python and GIS to help down-ballot, Democratic candidates win in swing districts. Currently working with Sri Kulkarni's campaign for the U.S. House of Representatives. 
+          .project.columns  
+            .thumb.column.is-narrow
+              img(src = "/assets/graphics/lobbyview.png")
+            .text.column 
+              p.is-size-6 Jan 2020 - Aug 2020  
+              p
+                strong LobbyView 
+              p Worked with the MIT Political Science Department, developed interactive data visualizations using D3 and React for LobbyView, a database of Congressional lobbying that aims to facilitate political science research and bring transparency to money in politics.
+          .project.columns  
+            .thumb.column.is-narrow
+              img(src = "/assets/graphics/gerrymandering.png")
+            .text.column 
+              p.is-size-6 2018
+              p
+                strong Is My District Gerrymandered? 
+              p Created an <a href = "http://ismydistrictgerrymandered.us">interactive website</a> that estimates how gerrymandered a U.S. congressional district is, using geometry and election results. Project <a href = "https://www.congressionalappchallenge.us/2018-ma6/">won the 2018 Congressional App Challenge</a> in Massachusetts's 6th District. 
+          .project.columns  
+            .thumb.column.is-narrow
+              img(src = "/assets/graphics/seats-votes.png")
+            .text.column 
+              p.is-size-6 Spring 2018
+              p
+                strong Exploring the Seats-Votes Curve
+              p Developed an <a href = "https://jeffreyshen19.github.io/Seats-Votes-Curves/">interactive, data-driven explainer</a> of the seats-votes curve, a measure of fairness in redistricting. Built with D3.
           h2.is-size-5 Full Stack Development
+          .project.columns  
+            .thumb.column.is-narrow
+              img(src = "/assets/graphics/pow.png")
+            .text.column 
+              p.is-size-6 Summer 2020
+              p
+                strong The Power of Without
+              p Worked with the City Science Group, in the MIT Media Lab, to develop a crowdsourced data collection and visualization platform for informal settlements in developing countries. Created with Node.js and Leaflet.               
           .project.columns  
             .thumb.column.is-narrow
               img(src = "/assets/graphics/pollpa.png")
@@ -144,5 +149,5 @@ html(lang='en')
               p.is-size-6 Spring 2019
               p
                 strong PollPA
-              p Developed an open source, <a href = "https://pollpa.com/">anonymous platform</a> to poll students at my high school on important issues, in real-time. Received over 2,000 visitors a week. Created with <a href = "https://rmrm.io/">R. Miles McCain</a>, using Django and D3.
+              p Developed an open source, <a href = "https://pollpa.com/">anonymous platform</a> to poll students at my high school on important issues, in real-time. Created with <a href = "https://rmrm.io/">R. Miles McCain</a>, using Django and D3.
     script(src = "/dist/main-min.js")
