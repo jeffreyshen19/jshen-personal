@@ -26,7 +26,7 @@ html(lang='en')
           h1.is-size-2(onclick = "toggleName()") 
             span#name Jeffrey Shen 
           p#subtitle tech, media & politics!
-          img#profile(src = "/assets/graphics/profile-illustration.jpg")
+          img#profile(src = "/assets/graphics/profile-illustration.jpg" alt = "Illustrated profile photo")
           br
           .links.links-large
             p 
@@ -51,7 +51,7 @@ html(lang='en')
       #content.column 
         section#about
           //- h1.is-size-3 About
-          img#mobile-profile(src = "/assets/graphics/profile-illustration.jpg")
+          img#mobile-profile(src = "/assets/graphics/profile-illustration.jpg" alt = "Illustrated profile photo")
           p Hey, I'm Jeffrey (he/him/他)! I study computer science and politics, with a concentration in comparative media studies, at MIT. I'm interested in using technology to bring clarity and transparency to politics, whether it be through data journalism, open source software, or civic tech. I also run a <a href = "https://blog.jeffreyshen.com" target = "_blank">blog</a> and a <a href = "https://notes.jeffreyshen.com" target = "_blank">micro-blog</a>, where I write about data visualization, politics, and more.
             br
             br
@@ -61,7 +61,7 @@ html(lang='en')
           h2.is-size-5 Research 
           .project.columns  
             .thumb.column.is-narrow
-              img(src = "/assets/graphics/russia-new.png")
+              img(src = "/assets/graphics/russia-new.png" alt = "Screenshot of JSON metadata")
             .text.column 
               p.is-size-6 Fall 2018
               p
@@ -69,7 +69,7 @@ html(lang='en')
               p Used machine learning and sentiment analysis to explore Russian disinformation on Twitter in the 2016 and 2018 elections. Wrote an <a href = "https://dpclab.org/russia/">interactive data journalism series</a> and created a (now defunct) <a href = "https://twitter.com/TrackTheTrolls">Twitter bot</a>. Completed as part of an Independent Project at Phillips Academy with <a href = "https://rmrm.io/">R. Miles McCain</a>, under the mentorship of John Palfrey, Michael Barker, and Malgorzata Stergios.
           .project.columns  
             .thumb.column.is-narrow
-              img(src = "/assets/graphics/china.jpg")
+              img(src = "/assets/graphics/china.jpg" alt = "Tiananmen Square with security cameras in the foreground")
             .text.column 
               p.is-size-6 Fall 2018
               p
@@ -78,7 +78,7 @@ html(lang='en')
           h2.is-size-5 Data Visualization 
           .project.columns  
             .thumb.column.is-narrow
-              img(src = "/assets/graphics/blog.png")
+              img(src = "/assets/graphics/blog.png" alt = "Green choropleth map of Los Angeles")
             .text.column 
               p.is-size-6 Spring 2019 - Present
               p
@@ -86,7 +86,7 @@ html(lang='en')
               p A <a href = "https://blog.jeffreyshen.com">data visualization publication</a> covering politics, society, and culture. Example topics include <a href = "https://blog.jeffreyshen.com/society/2020/04/01/la-shade.html">mapping the inequal access to shade</a> in Greater Los Angeles and <a href ="https://blog.jeffreyshen.com/culture/2019/03/08/lyricism.html">quantifying how lyrical modern hip-hop is</a>.
           .project.columns  
             .thumb.column.is-narrow
-              img(src = "/assets/graphics/ring.png")
+              img(src = "/assets/graphics/ring.png" alt = "Screenshot of website, with a linechart and numbers")
             .text.column 
               p.is-size-6 Summer 2020
               p
@@ -94,7 +94,7 @@ html(lang='en')
               p Created a <a href = "https://ring.jeffreyshen.com">website</a> monitoring the over 1,400 partnerships Amazon Ring has with local law enforcement. Built with Node.js, D3, and MongoDB.
           .project.columns  
             .thumb.column.is-narrow
-              img(src = "/assets/graphics/sota.png")
+              img(src = "/assets/graphics/sota.png" alt = "Samuel Phillips Hall at Phillips Academy, a Greek-style building")
             .text.column 
               p.is-size-6 Spring 2018
               p
@@ -103,7 +103,7 @@ html(lang='en')
           h2.is-size-5 Politics 
           .project.columns  
             .thumb.column.is-narrow
-              img(src = "/assets/graphics/bluebonnet.png")
+              img(src = "/assets/graphics/bluebonnet.png" alt = "Blue choropleth map of Texas's 22nd Congressional District (near Houston)")
             .text.column 
               p.is-size-6 Jan 2020 - Present 
               p
@@ -111,7 +111,7 @@ html(lang='en')
               p Volunteer data analyst, using Python and GIS to help down-ballot, Democratic candidates win in swing districts. Currently working with Sri Kulkarni's campaign for the U.S. House of Representatives. 
           .project.columns  
             .thumb.column.is-narrow
-              img(src = "/assets/graphics/lobbyview.png")
+              img(src = "/assets/graphics/lobbyview.png" alt = "Screenshot of the homepage of LobbyView")
             .text.column 
               p.is-size-6 Jan 2020 - Aug 2020  
               p
@@ -119,7 +119,7 @@ html(lang='en')
               p Worked with the MIT Political Science Department, developed interactive data visualizations using D3 and React for LobbyView, a database of Congressional lobbying that aims to facilitate political science research and bring transparency to money in politics.
           .project.columns  
             .thumb.column.is-narrow
-              img(src = "/assets/graphics/gerrymandering.png")
+              img(src = "/assets/graphics/gerrymandering.png" alt = "Screenshot of a gerrymandered district near Baltimore, MD")
             .text.column 
               p.is-size-6 2018
               p
@@ -127,7 +127,7 @@ html(lang='en')
               p Created an <a href = "http://ismydistrictgerrymandered.us">interactive website</a> that estimates how gerrymandered a U.S. congressional district is, using geometry and election results. Project <a href = "https://www.congressionalappchallenge.us/2018-ma6/">won the 2018 Congressional App Challenge</a> in Massachusetts's 6th District. 
           .project.columns  
             .thumb.column.is-narrow
-              img(src = "/assets/graphics/seats-votes.png")
+              img(src = "/assets/graphics/seats-votes.png" alt = "Screenshot of website, showing a line chart")
             .text.column 
               p.is-size-6 Spring 2018
               p
@@ -136,7 +136,7 @@ html(lang='en')
           h2.is-size-5 Full Stack Development
           .project.columns  
             .thumb.column.is-narrow
-              img(src = "/assets/graphics/pow.png")
+              img(src = "/assets/graphics/pow.png" alt = "Red choropleth map of the world's countries")
             .text.column 
               p.is-size-6 Summer 2020
               p
@@ -144,7 +144,7 @@ html(lang='en')
               p Worked with the City Science Group, in the MIT Media Lab, to develop a crowdsourced data collection and visualization platform for informal settlements in developing countries. Created with Node.js and Leaflet.               
           .project.columns  
             .thumb.column.is-narrow
-              img(src = "/assets/graphics/pollpa.png")
+              img(src = "/assets/graphics/pollpa.png" alt = "Screenshot of website")
             .text.column 
               p.is-size-6 Spring 2019
               p
