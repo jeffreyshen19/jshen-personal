@@ -4,7 +4,7 @@ html(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name = "description" content = "Jeffrey Shen is a student at MIT studying computer science, political science, and comparative media studies, with an interest in data journalism, digital surveillance/censorship/propaganda, and political tech.")
+    meta(name = "description" content = "Jeffrey Shen is an undergraduate studying computer science and politics at MIT, with an interest in computational social science, surveillance/carceral technologies, and data visualization.")      
     meta(name = "author" content = "Jeffrey Shen")
     title Jeffrey Shen
     link(rel="icon" type="image/png" href="/assets/graphics/favicon.png")
@@ -17,7 +17,7 @@ html(lang='en')
         section
           h1.is-size-2(onclick = "toggleName()") 
             span#name Jeffrey Shen 
-          p#subtitle cs, media & politics!
+          p#subtitle student researcher based in los angeles
           img#profile(src = "/assets/graphics/profile-illustration.jpg" alt = "Illustrated profile photo")
           br
           .links.links-large
@@ -44,16 +44,24 @@ html(lang='en')
         section#about
           //- h1.is-size-3 About
           img#mobile-profile(src = "/assets/graphics/profile-illustration.jpg" alt = "Illustrated profile photo")
-          p Hey, I'm Jeffrey, a rising junior studying computer science and politics at MIT. I'm interested in using technology to bring clarity and transparency to politics, and have done work around data journalism, digital censorship/propaganda, surveillance, policing, and political tech. 
+          p Hey, I'm Jeffrey, a junior studying computer science and politics at MIT. I'm interested in technology and systems of power, and have done work around surveillance/carceral technologies, digital censorship/propaganda, civic technology, and data visualization. 
             br 
             br
-            | Right now, I'm researching Amazon Ring's growing surveillance network of smart doorbell cameras in the MIT Media Lab's Human Dynamics Group. I also am a 2020-2021 Human Rights & Technology Fellow at the MIT Center for International Studies, where I study privacy and policing concerns related to acoustic gunshot detection systems. 
+            | Currently, I do computational social science research in the MIT Media Lab's Human Dynamics Group, and just submitted a preprint about how Amazon's Ring Neighbors surveillance platform is used nationally and in Los Angeles. I also am a 2020-2021 Human Rights & Technology Fellow at the MIT Center for International Studies, where I study privacy and policing concerns related to acoustic gunshot detection systems. Previously, I was a data analytics intern at MassHealth, where I worked on improving data quality, visualizations, and addressing health inequities.
             br
             br  
-            | Please reach out via <a href = "mailto:jjshen@mit.edu">email</a> or <a href = "https://twitter.com/jeffreyjshen">Twitter</a>!
+            | Please reach out via <a href = "mailto:jjshen@mit.edu">email</a> or <a href = "https://twitter.com/jeffreyjshen">Twitter</a> (dms open)!
         section#portfolio
           h1.is-size-3 Portfolio
           h2.is-size-5 Research 
+          .project.columns  
+            .thumb.column.is-narrow
+              img(src = "/assets/graphics/ring-cameras.png" alt = "Map of Ring cameras in a Los Angeles neighborhood")
+            .text.column 
+              p.is-size-6 2020-2021
+              p
+                strong The Cop In Your Neighbor's Doorbell: Amazon Ring And The Spread of Participatory Mass Surveillance
+              p Used spatial regression modeling and computational grounded theory to study how Amazon's Ring Neighbors platform is used nationally and, as a case study, in Los Angeles. Our paper was submitted to CSCW 2022, with a <a href = "assets/ring-cscw-2021.pdf">preprint available</a>. Research was conducted in the MIT Media Lab's Human Dynamics group, with Dan Calacci and Alex (Sandy) Pentland.
           .project.columns  
             .thumb.column.is-narrow
               img(src = "/assets/graphics/russia-new.png" alt = "Screenshot of JSON metadata")
