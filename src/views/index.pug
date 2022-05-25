@@ -17,7 +17,7 @@ html(lang='en')
         section
           h1.is-size-2(onclick = "toggleName()") 
             span#name Jeffrey Shen 
-          p#subtitle student researcher based in los angeles
+          p#subtitle student, technologist, &amp; researcher
           img#profile(src = "/assets/graphics/profile-illustration.jpg" alt = "Illustrated profile photo")
           br
           .links.links-large
@@ -26,22 +26,24 @@ html(lang='en')
             p 
               a(href = "#portfolio") Portfolio
           .links.links-icon 
-            a(href = "https://github.com/jeffreyshen19" target = "_blank")
-              i.fab.fa-github
-            a(href = "mailto:jjshen@mit.edu")
-              i.fas.fa-envelope
+            a(href = "https://github.com/jeffreyshen19" target = "_blank" aria-label="Github")
+              i.fab.fa-github(aria-hidden="true")
+            a(href = "https://twitter.com/jeffreyjshen" target = "_blank" aria-label="Twitter")
+              i.fab.fa-twitter(aria-hidden="true")
+            a(href = "mailto:jjshen@mit.edu" aria-label="Email address")
+              i.fas.fa-envelope(aria-hidden="true")
           hr
       #content.column 
         section#about
           //- h1.is-size-3 About
           img#mobile-profile(src = "/assets/graphics/profile-illustration.jpg" alt = "Illustrated profile photo")
-          p Hey, I'm Jeffrey, a junior studying computer science and politics at MIT. I'm interested in technology and systems of power, and have done work around surveillance/carceral technologies, digital censorship/propaganda, civic technology, and data visualization. 
+          p Hey, I'm Jeffrey, a student, technologist, and interdisciplinary researcher. My work uses software development, machine learning, data visualization, cartography, and writing to clarify and expose the sociopolitical impacts of technology. 
             br 
             br
-            | Currently, I do computational social science research in the MIT Media Lab's Human Dynamics Group, and recently submitted a preprint about how Amazon's Ring Neighbors surveillance platform is used nationally and in Los Angeles. Previously, I was a data analytics intern at MassHealth, where I worked on improving data quality, visualizations, and addressing health inequities. I also was a 2020-2021 Human Rights & Technology Fellow at the MIT Center for International Studies, where I studied acoustic gunshot detection systems.
+            | I recently graduated from MIT with a degree in computer science and minor in political science, and am an incoming full-stack web developer at the U.S. Census Bureau. Next fall, I will begin my Masters in Engineering in the MIT Digital Humanities Lab and the Human Dynamics Group in the MIT Media Lab. On campus, I also help run a <a href = "https://bit.ly/readingforrevolution">reading group</a> focused on understanding contemporary social issues, and spend a lot of my time thinking, talking, and (hopefully) writing about politics, history, and urbanism.
             br
-            br  
-            | Please reach out via <a href = "mailto:jjshen@mit.edu">email</a> or <a href = "https://twitter.com/jeffreyjshen">Twitter</a> (dms open)!
+            br
+            | Please reach out via <a href = "mailto:jjshen@mit.edu">email</a> or <a href = "https://twitter.com/jeffreyjshen">Twitter</a>!
         section#portfolio
           h1.is-size-3 Portfolio
           h2.is-size-5 Research 
@@ -49,26 +51,10 @@ html(lang='en')
             .thumb.column.is-narrow
               img(src = "/assets/graphics/ring-cameras.png" alt = "Map of Ring cameras in a Los Angeles neighborhood")
             .text.column 
-              p.is-size-6 2020-2021
+              p.is-size-6 2020-2022
               p
                 strong The Cop In Your Neighbor's Doorbell: Amazon Ring And The Spread of Participatory Mass Surveillance
-              p Used spatial regression modeling and computational grounded theory to study how Amazon's Ring Neighbors platform is used nationally and, as a case study, in Los Angeles. Our paper was submitted to CSCW 2022, with a <a href = "assets/ring-cscw-2021.pdf">preprint available</a>. Research was conducted in the MIT Media Lab's Human Dynamics group, with Dan Calacci and Alex (Sandy) Pentland.
-          .project.columns  
-            .thumb.column.is-narrow
-              img(src = "/assets/graphics/russia-new.png" alt = "Screenshot of JSON metadata")
-            .text.column 
-              p.is-size-6 Fall 2018
-              p
-                strong Russian Internet Disinformation
-              p Used machine learning and sentiment analysis to explore Russian disinformation on Twitter in the 2016 and 2018 elections. Wrote an <a href = "https://dpclab.org/russia/">interactive data journalism series</a> and created a (now defunct) <a href = "https://twitter.com/TrackTheTrolls">Twitter bot</a>. Worked with <a href = "https://rmrm.io/">R. Miles McCain</a>, under the mentorship of John Palfrey, Michael Barker, and Malgorzata Stergios.
-          .project.columns  
-            .thumb.column.is-narrow
-              img(src = "/assets/graphics/china.jpg" alt = "Tiananmen Square with security cameras in the foreground")
-            .text.column 
-              p.is-size-6 Fall 2018
-              p
-                strong Deciphering Chinese Censorship
-              p Developed the <a href = "https://dpclab.org/china/dashboard/">Weibo Censorship Dashboard</a>, a nearly real-time, fully open-source feed of  censorship on the popular Chinese social media site Weibo. Published <a href = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3266193">paper</a> on SSRN. Also worked with <a href = "https://rmrm.io/">R. Miles McCain</a>, under the mentorship of John Palfrey, Michael Barker, and Malgorzata Stergios.
+              p Used spatial regression modeling and computational grounded theory to study how Amazon's Ring Neighbors platform is used nationally and, as a case study, in Los Angeles. Our paper was accepted for CSCW 2022, with a <a href = "assets/ring-cscw-2022.pdf">preprint available</a>. Research was conducted in the MIT Media Lab's Human Dynamics group, with Dan Calacci and Alex (Sandy) Pentland.
           h2.is-size-5 Data Visualization 
           .project.columns  
             .thumb.column.is-narrow
