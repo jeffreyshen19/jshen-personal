@@ -1,7 +1,5 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
-
-sass.compiler = require('node-sass');
+var sass = require('gulp-dart-sass');
 
 var pug = require('gulp-pug');
 var minify = require('gulp-minify');
