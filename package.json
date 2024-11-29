@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "gulp-minify": "0.0.14",
-    "pug": "^2.0.0-beta6"
+    "pug": "^3.0.1"
   }
 }
